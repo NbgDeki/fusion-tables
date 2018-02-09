@@ -5,6 +5,10 @@ body{
   padding: 0;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
+
+  a{
+    transition: all 0.5s;
+  }
 }
 .container-fluid, .container{
   padding: 0;
@@ -258,9 +262,8 @@ body{
   display: block;
   position: fixed;
   background-color: white;
-  width: 300px;
+  width: 305px;
   height: 100vh;
-  border: 1px solid $primary;
   z-index: 3;
 
   .logo{
@@ -272,6 +275,80 @@ body{
       width: 258px;
       margin-left: auto;
       margin-right: auto;
+    }
+  }
+
+  .two-boxes{
+    display: flex;
+    position: fixed;
+    top: 218px;
+    height: 80px;
+    flex-wrap: nowrap;
+
+    .left-box{
+      display: block;
+      width: 170px;
+      height: 80px;
+      background-color: $primary;
+      margin-right: 10px;
+    }
+
+    .right-box{
+      display: block;
+      width: auto;
+      height: 80px;
+      background-color: $primary;
+      opacity: 0.8;
+      color: white;
+      padding: 24px 45px;
+
+      h2{
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .nav-content{
+    margin-top: 230px;
+    padding: 25px;
+
+    ul{
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+
+      li{
+        text-align: center;
+        height: 50px;
+        border-bottom: 1px solid lighten($letters-color, 35%);
+        padding-top: 15px;
+
+        &:last-child{
+          border-bottom: none;
+        }
+
+        a{
+          color: $letters-color;
+          text-transform: uppercase;
+          font-size: 16px;
+
+          &:hover{
+            text-decoration: none;
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  .social-icons{
+    margin-top: 50px;
+    text-align: center;
+
+    svg{
+      margin-right: 15px;
+      font-size: 24px;
     }
   }
 }

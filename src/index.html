@@ -23,42 +23,55 @@
                 <div class="container">
                     <i class="fas fa-bars" id="trigger"></i>
                 </div>
-            </div>
+            </div><!-- .container-fluid -->
+
             <div class="container-fluid">
                 <div class="index-slider">
                     <div class="owl-carousel owl-theme">
-                        <div class="slide"><img src="./img/slider-1.jpg" alt="slider 1" /></div>
-                        <div class="slide"><img src="./img/slider-1.jpg" alt="slider 1" /></div>
-                        <div class="slide"><img src="./img/slider-1.jpg" alt="slider 1" /></div>
+                        <div class="slide"><img src=<%= require("./img/slider-1.jpg") %> alt="slider 1" /></div>
+                        <div class="slide"><img src=<%= require("./img/slider-1.jpg") %> alt="slider 1" /></div>
+                        <div class="slide"><img src=<%= require("./img/slider-1.jpg") %> alt="slider 1" /></div>
                     </div>
                 </div>
-                <div class="container" style="border: 1px solid red">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2>Dummy text</h2>
-                        </div>
+            </div><!-- .container-fluid -->
+
+            <section class="container body-content">
+                <div class="row">
+                    <div class="col-md-4 footer-logo">
+                        <img src="./img/logo.png" alt="fusion table" class="logo" />
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores autem distinctio dolor dolorem eaque et eveniet inventore ipsa labore
+                            minima odit, officiis reiciendis repellat sequi, soluta tempore, tenetur ut vitae.
+                        </p>
+                    </div>
+                    <div class="col-md-4 contact">
+                        <p class="title"><a href="#">Kontakt</a></p>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i>Zmaja od noćaja 9, Belgrade, Serbia</li>
+                            <li><a href="#"><i class="far fa-envelope"></i>support@fusiontables.rs</a></li>
+                            <li><a href="#"><i class="fas fa-phone"></i>(+381) 11 123 456 <br> (+381) 63 123 456</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 insta">
+                        <p class="title"><a href="#">Instagram feed</a></p>
+                        <ul>
+                            <li><a href="#"><img src=<%= require("./img/instagram-1.jpg") %> alt="instagram 1" /></a></li>
+                            <li><a href="#"><img src=<%= require("./img/instagram-2.jpg") %> alt="instagram 2" /></a></li>
+                            <li><a href="#"><img src=<%= require("./img/instagram-3.jpg") %> alt="instagram 3" /></a></li>
+                            <li><a href="#"><img src=<%= require("./img/instagram-4.jpg") %> alt="instagram 4" /></a></li>
+                            <li><a href="#"><img src=<%= require("./img/instagram-5.jpg") %> alt="instagram 5" /></a></li>
+                            <li><a href="#"><img src=<%= require("./img/instagram-6.jpg") %> alt="instagram 6" /></a></li>
+                        </ul>
+                        <p>Pratite nas: <a href="#">@fusiontablesrs</a></p>
                     </div>
                 </div>
-            </div>
+            </section><!-- .container -->
+
+            <%= require('html-loader!./inc/footer.html') %>
+
         </div>
 
 
-        <section>
-            <footer>
-                <div class="container-fluid made-by">
-                    <div class="container">
-                        <div class="row">
-                            <div class="copyright">
-
-                            </div>
-                            <div class="social-icons">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </section>
     </div>
 </body>
 

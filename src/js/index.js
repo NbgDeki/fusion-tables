@@ -4,7 +4,11 @@ import 'owl.carousel';
 $(function () {
     $('.owl-carousel').owlCarousel({
         items: 1,
-        autoHeight: true
+        autoHeight: true,
+        nav: true,
+        navText: ['<img src="https://ministudio.rs/download/arrow-right.png">', '<img src="https://ministudio.rs/download/arrow-right.png">'],
+        loop: true,
+        autoplay: true,
     });
 });
 
