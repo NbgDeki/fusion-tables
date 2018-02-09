@@ -133,21 +133,14 @@ body{
   background-color: $background;
   z-index: 999;
 
-  -webkit-transition: all 0.5s; /* Safari */
   transition: all 0.5s;
 
-  -ms-transform: translate(-280px, 0); /* IE 9 */
-  -webkit-transform: translate(-280px, 0); /* Safari */
   transform: translate(-280px, 0);
 
   &.active{
-    -ms-transform: translate(0, 0); /* IE 9 */
-    -webkit-transform: translate(0, 0); /* Safari */
     transform: translate(0, 0);
 
     + #site-content{
-      -ms-transform: translate(280px, 0); /* IE 9 */
-      -webkit-transform: translate(280px, 0); /* Safari */
       transform: translate(280px, 0);
     }
   }
@@ -217,14 +210,38 @@ body{
 #site-content{
   // min-height: 2100px;
 
-  -webkit-transition: all 0.5s; /* Safari */
+  .back-logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    flex-wrap: nowrap;
+    padding: 25px;
+    display: none;
+
+    @include max-breakpoint(full-hd){
+      display: flex;
+    }
+
+    @include max-breakpoint(md){
+      display: none;
+    }
+
+    .trigger2{
+      color: $primary;
+      font-size: 30px;
+      margin-top: 10px;
+      margin-left: 40px;
+      cursor: pointer;
+    }
+  }
+
   transition: all 0.5s;
 
   .fluid-nav{
     position: fixed;
     z-index: 2;
 
-    -webkit-transition: all 0.5s; /* Safari */
     transition: all 0.5s;
 
   }
@@ -258,6 +275,48 @@ body{
   }
 }
 
+.two-boxes{
+  display: flex;
+  position: fixed;
+  top: 218px;
+  height: 80px;
+  flex-wrap: nowrap;
+  z-index: 4;
+  transition: all .5s ease;
+  opacity: 1;
+
+  @include max-breakpoint(full-hd){
+    opacity: 0;
+  }
+
+  &.active{
+    opacity: 1;
+  }
+
+  .left-box{
+    display: block;
+    width: 170px;
+    height: 80px;
+    background-color: $primary;
+    margin-right: 10px;
+  }
+
+  .right-box{
+    display: block;
+    width: auto;
+    height: 80px;
+    background-color: $primary;
+    opacity: 0.8;
+    color: white;
+    padding: 24px 45px;
+
+    h2{
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+}
+
 #desktop-side-menu{
   display: block;
   position: fixed;
@@ -265,6 +324,20 @@ body{
   width: 305px;
   height: 100vh;
   z-index: 3;
+  transform: translate(0,0);
+  transition: all .5s ease;
+
+  @include max-breakpoint(full-hd){
+    transform: translate(-305px,0);
+  }
+
+  @include max-breakpoint(md){
+    display: none;
+  }
+
+  &.active{
+    transform: translate(0,0);
+  }
 
   .logo{
     margin-top: 80px;
@@ -278,39 +351,8 @@ body{
     }
   }
 
-  .two-boxes{
-    display: flex;
-    position: fixed;
-    top: 218px;
-    height: 80px;
-    flex-wrap: nowrap;
-
-    .left-box{
-      display: block;
-      width: 170px;
-      height: 80px;
-      background-color: $primary;
-      margin-right: 10px;
-    }
-
-    .right-box{
-      display: block;
-      width: auto;
-      height: 80px;
-      background-color: $primary;
-      opacity: 0.8;
-      color: white;
-      padding: 24px 45px;
-
-      h2{
-        text-transform: uppercase;
-        font-weight: 300;
-      }
-    }
-  }
-
   .nav-content{
-    margin-top: 230px;
+    margin-top: 205px;
     padding: 25px;
 
     ul{

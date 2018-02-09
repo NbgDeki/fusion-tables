@@ -37,4 +37,9 @@ $(function () {
             });
         }
     });
+
+    $('.trigger2').click(function () {
+        $('#desktop-side-menu').toggleClass('active');
+        $('.two-boxes').toggleClass('active');
+    });
 });
