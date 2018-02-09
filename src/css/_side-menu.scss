@@ -126,7 +126,6 @@ body{
   position: fixed;
   display: block;
   width: 280px;
-  height: 100vh;
   background-color: $background;
   z-index: 999;
 
@@ -253,12 +252,28 @@ body{
     opacity: 0.7;
     background-color: black;
   }
-  
+}
 
+#desktop-side-menu{
+  display: block;
+  position: fixed;
+  background-color: white;
+  width: 300px;
+  height: 100vh;
+  border: 1px solid $primary;
+  z-index: 3;
 
-  
+  .logo{
+    margin-top: 80px;
+    margin-bottom: 80px;
 
-  
+    img{
+      display: block;
+      width: 258px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 

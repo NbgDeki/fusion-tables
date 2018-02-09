@@ -1,6 +1,7 @@
 import 'jquery';
 import 'bootstrap';
 import '../css/main.scss';
+require('./index');
 
 
 import fontawesome from '@fortawesome/fontawesome';
@@ -20,6 +21,7 @@ import faPinterestSquare from '@fortawesome/fontawesome-free-brands/faPinterestS
 // Add the icon to the library so you can use it in your page
 fontawesome.library.add(faPlus, faBars, faAngleRight, faFacebookF, faInstagram, faMapMarkerAlt, faPhone, faEnvelope, faLinkedin, faPinterestSquare);
 
+
 $(function () {
     $('.collapse').collapse('hide');
 
@@ -35,5 +37,4 @@ $(function () {
             });
         }
     });
-
 });

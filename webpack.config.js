@@ -58,10 +58,10 @@ module.exports = {
                     ],
                 })
             },
-            {
+            /*{
                 test: /\.html$/,
                 use: ['html-loader']
-            },
+            },*/
             {
                 test: /\.(jpg|png|jpeg)$/,
                 use: [
@@ -79,8 +79,9 @@ module.exports = {
     },
     plugins: [
         new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery'
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery"
         }),
         new UglifyJsPlugin({
             //...

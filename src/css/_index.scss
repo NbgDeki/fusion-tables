@@ -1,0 +1,17 @@
+#homepage{
+
+  .index-slider{
+    max-height: 900px;
+    overflow-y: hidden;
+
+    .owl-carousel{
+
+      .slide{
+
+        img{
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
