@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack-dev-server",
+    "build": "webpack-dev-server --open",
     "build:prod": "webpack -p"
   },
   "repository": {
@@ -39,15 +39,16 @@
     "style-loader": "^0.19.1",
     "uglifyjs-webpack-plugin": "^1.1.6",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.9.7"
-  },
-  "dependencies": {
+    "webpack-dev-server": "^2.9.7",
     "@fortawesome/fontawesome": "^1.1.2",
     "@fortawesome/fontawesome-free-brands": "^5.0.6",
     "@fortawesome/fontawesome-free-regular": "^5.0.6",
-    "@fortawesome/fontawesome-free-solid": "^5.0.4",
+    "@fortawesome/fontawesome-free-solid": "^5.0.4"
+  },
+  "dependencies": {
     "bootstrap": "^4.0.0-beta.3",
     "jquery": "^3.2.1",
+    "owl.carousel": "^2.2.0",
     "popper.js": "^1.12.9",
     "precss": "^2.0.0"
   }

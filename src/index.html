@@ -6,123 +6,80 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fusion tables</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 
 <body>
-    <nav id="side-menu">
-        <div id="accordion">
-            <div class="card">
-                <div class="card-header" id="heading1">
-                    <h5 class="mb-0">
-                        <a href="#">home</a>
-                    </h5>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="heading2">
-                    <h5 class="mb-0">
-                        <a href="#">o nama</a>
-                    </h5>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="heading5">
-                    <h5 class="mb-0">
-                        <a href="#">kolekcije</a>
-                        <div class="plusic collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                            <i class="fas fa-plus"></i>
-                        </div>
-                    </h5>
-                </div>
+    <%= require('html-loader!./inc/mobile-side-menu.html') %>
 
-                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
-                    <div class="card-body">
-                        <p>
-                            <a href="#">home</a>
-                        </p>
-                        <p>
-                            <a href="#">o nama</a>
-                        </p>
-                        <p>
-                            <a href="#">kolekcije</a>
-                        </p>
-                        <p>
-                            <a href="#">dizajn</a>
-                        </p>
-                        <p>
-                            <a href="#">kvalitet</a>
-                        </p>
-                        <p>
-                            <a href="#">iskustva</a>
-                        </p>
-                        <p>
-                            <a href="#">galerija</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="heading4">
-                    <h5 class="mb-0">
-                        <a href="#">dizajn</a>
-                    </h5>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="heading4">
-                    <h5 class="mb-0">
-                        <a href="#">iskustva</a>
-                    </h5>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="heading4">
-                    <h5 class="mb-0">
-                        <a href="#">kvalitet</a>
-                    </h5>
-                </div>
-            </div>
-        </div>
-    </nav>
     <div id="site-content">
 
-        <div class="container-fluid fluid-nav">
-            <div class="container">
-                <i class="fas fa-bars" id="trigger"></i>
+        <div class="back-logo">
+            <a href="#"><img src=<%= require("./img/logo.png") %> alt="fusion tables" /></a>
+            <div class="trigger2">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
 
 
+        <div id="homepage">
 
-        <section>
-            <footer>
-                <div class="container-fluid made-by">
-                    <div class="container">
-                        <div class="row">
-                            <div class="copyright">
+            <%= require('html-loader!./inc/desktop-side-menu.html') %>
 
-                            </div>
-                            <div class="social-icons">
-                                
-                            </div>
-                        </div>
+            <div class="container-fluid fluid-nav">
+                <div class="container">
+                    <i class="fas fa-bars" id="trigger"></i>
+                </div>
+            </div><!-- .container-fluid -->
+
+            <div class="container-fluid">
+                <div class="index-slider">
+                    <div class="owl-carousel owl-theme">
+                        <div class="slide"><img src=<%= require("./img/slider-1.jpg") %> alt="slider 1" /></div>
+                        <div class="slide"><img src=<%= require("./img/slider-1.jpg") %> alt="slider 1" /></div>
+                        <div class="slide"><img src=<%= require("./img/slider-1.jpg") %> alt="slider 1" /></div>
                     </div>
                 </div>
-            </footer>
-        </section>
+            </div><!-- .container-fluid -->
 
+            <section class="container body-content">
+                <div class="row">
+                    <div class="col-md-4 footer-logo">
+                        <img src="./img/logo.png" alt="fusion table" class="logo" />
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores autem distinctio dolor dolorem eaque et eveniet inventore ipsa labore
+                            minima odit, officiis reiciendis repellat sequi, soluta tempore, tenetur ut vitae.
+                        </p>
+                    </div>
+                    <div class="col-md-4 contact">
+                        <p class="title"><a href="#">Kontakt</a></p>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i>Zmaja od noćaja 9, Belgrade, Serbia</li>
+                            <li><a href="#"><i class="far fa-envelope"></i>support@fusiontables.rs</a></li>
+                            <li><a href="#"><i class="fas fa-phone"></i>(+381) 11 123 456 <br> (+381) 63 123 456</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 insta">
+                        <p class="title"><a href="#">Instagram feed</a></p>
+                        <ul>
+                            <li><a href="#"><img src=<%= require("./img/instagram-1.jpg") %> alt="instagram 1" /></a></li>
+                            <li><a href="#"><img src=<%= require("./img/instagram-2.jpg") %> alt="instagram 2" /></a></li>
+                            <li><a href="#"><img src=<%= require("./img/instagram-3.jpg") %> alt="instagram 3" /></a></li>
+                            <li><a href="#"><img src=<%= require("./img/instagram-4.jpg") %> alt="instagram 4" /></a></li>
+                            <li><a href="#"><img src=<%= require("./img/instagram-5.jpg") %> alt="instagram 5" /></a></li>
+                            <li><a href="#"><img src=<%= require("./img/instagram-6.jpg") %> alt="instagram 6" /></a></li>
+                        </ul>
+                        <p>Pratite nas: <a href="#">@fusiontablesrs</a></p>
+                    </div>
+                </div>
+            </section><!-- .container -->
 
+            <%= require('html-loader!./inc/footer.html') %>
 
-
+        </div>
 
 
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
-
 </body>
 
 </html>
