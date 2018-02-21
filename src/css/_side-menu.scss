@@ -1,30 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500');
-
-body{
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
-
-  a{
-    transition: all 0.5s;
-  }
 }
-.container-fluid, .container{
+
+a {
+  transition: all 0.5s;
+  text-decoration: none !important;
+}
+
+.container-fluid,
+.container {
   padding: 0;
 }
-.row{
+
+.row {
   margin: 0;
 }
-::-moz-selection { /* Code for Firefox */
+
+::-moz-selection {
+  /* Code for Firefox */
   color: #fff;
   background: $primary;
 }
+
 ::selection {
   color: #fff;
   background: $primary;
 }
-.container{
+
+.container {
   @include max-breakpoint(xs) {
     max-width: 526px;
   }
@@ -41,146 +48,55 @@ body{
     max-width: 1290px;
   }
 }
-.fixed-nav{
-  // background-color: rgba($color: #000000, $alpha: .4);
-  position: fixed;
-  right: 0;
-  top: calc(35vh - 40px);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  z-index: 9999 !important;
-  transition: all .5s ease;
-  @include max-breakpoint(md){
-    display: none;
-  }
-  @include max-breakpoint(xs){
-    top: 135px;
-  }
-  .location{
-    display: flex;
-    align-items: center;
-    margin-bottom: 3px;
-  }
-  .location-p{
-    display: flex;
-    align-items: center;
-    height: 40px;
-    padding: 0 15px;
-    a{
-      text-decoration: none;
-    }
-  p{
-      color: $secondary;
-      margin-bottom: 0;
-      text-transform: uppercase;
-      font-size: 12px;
-      color: transparent;
-      transition: all .5s ease;
-    }
-  }
-  .location-icon{
-    height: 40px;
-    width: 40px;
-    background-color: $secondary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // margin-left: 15px;
-    border: 1px solid $secondary;
-    .fa-map-marker-alt{
-      color: #fff;
-    }
-  }
-  .phone{
-    display: flex;
-    align-items: center;
-  }
-  .phone-p{
-    display: flex;
-    align-items: center;
-    height: 40px;
-    padding: 0 15px;
-    a{
-      text-decoration: none;
-    }
-    p{
-      text-transform: uppercase;
-      color: transparent;
-      margin-bottom: 0;
-      font-size: 12px;
-      transition: all .5s ease;
-    }
-  }
-  .phone-icon{
-    // margin-left: 15px;
-    height: 40px;
-    width: 40px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid $secondary;
-    .fa-phone{
-      color: $secondary;
-    }
-  }
-  }
-#side-menu{
+
+
+
+#side-menu {
   position: fixed;
   display: block;
   width: 280px;
   background-color: $background;
   z-index: 999;
-
   transition: all 0.5s;
-
   transform: translate(-280px, 0);
-
-  &.active{
+  &.active {
     transform: translate(0, 0);
-
-    + #site-content{
+    +#site-content {
       transform: translate(280px, 0);
     }
   }
-
-  #accordion{
-    .card{
+  #accordion {
+    .card {
       border-radius: 0;
       border-top: none;
       border-left: none;
       border-right: none;
-
-      .card-header{
+      .card-header {
         position: relative;
         background-color: $background;
         border-radius: 0;
         transition: all .3s ease;
-        h5{
+        h5 {
           text-transform: uppercase;
         }
-        &:hover{
+        &:hover {
           opacity: .7;
         }
-        a{
+        a {
           font-size: 16px;
           color: $letters-color;
           text-decoration: none;
         }
-
-        .plusic{
+        .plusic {
           position: absolute;
           top: 12px;
           right: 15px;
-          &.collapsed{
-
-            svg{
+          &.collapsed {
+            svg {
               transform: rotate(0deg);
             }
           }
-
-          svg{
+          svg {
             color: $letters-color;
             font-size: 16px;
             cursor: pointer;
@@ -188,13 +104,12 @@ body{
           }
         }
       }
-
-      .card-body{
+      .card-body {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
         background-color: $background;
-        p{
-          a{
+        p {
+          a {
             text-decoration: none;
             text-transform: uppercase;
             color: $letters-color;
@@ -204,13 +119,87 @@ body{
       }
     }
   }
-
 }
 
-#site-content{
-  // min-height: 2100px;
+#accordion2 {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 221px;
+  .card {
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    .card-header {
+      position: relative;
+      background-color: $white;
+      border-radius: 0;
+      transition: all .3s ease;
+      border: none;
+      h5 {
+        text-transform: uppercase;
+        a{
+          &:hover{
+            color: $secondary;
+          }
+        }
+      }
+      &:hover {
+        // opacity: .7;
+      }
+      a {
+        font-size: 16px;
+        color: $letters-color;
+        text-decoration: none;
+        font-weight: 400;
+        @include max-breakpoint(lg) {
+          font-size: 14px;
+        }
+      }
+      .plusic {
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        &.collapsed {
+          svg {
+            transform: rotate(0deg);
+          }
+        }
+        svg {
+          color: $letters-color;
+          font-size: 16px;
+          cursor: pointer;
+          transform: rotate(45deg);
+          @include max-breakpoint(lg) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .card-body {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      background-color: $white;
+      p {
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: $letters-color;
+          font-size: 12px;
+          &:hover{
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}
 
-  .back-logo{
+
+#site-content {
+  // min-height: 2100px;
+  .back-logo {
     position: absolute;
     left: 0;
     top: 0;
@@ -218,16 +207,13 @@ body{
     flex-wrap: nowrap;
     padding: 25px;
     display: none;
-
-    @include max-breakpoint(full-hd){
+    @include max-breakpoint(full-hd) {
       display: flex;
     }
-
-    @include max-breakpoint(md){
+    @include max-breakpoint(md) {
       display: none;
     }
-
-    .trigger2{
+    .trigger2 {
       color: $primary;
       font-size: 30px;
       margin-top: 10px;
@@ -235,34 +221,40 @@ body{
       cursor: pointer;
     }
   }
-
   transition: all 0.5s;
-
-  .fluid-nav{
+  .fluid-nav {
     position: fixed;
     z-index: 2;
-
     transition: all 0.5s;
-
-  }
-
-  #trigger{
-    font-size: 30px;
-    color: $letters-color;
-    position: absolute;
-    right: 30px;
-    top: 30px;
+    background-color: $white;
     display: none;
-    cursor: pointer;
-
-
     @include max-breakpoint(md){
+      display: block;
+    }
+  }
+  .fluid-nav-cont {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: center;
+    img{
+      width: 200px;
+    }
+  }
+  #trigger {
+    font-size: 30px;
+    margin-left: 15px;
+    color: $secondary;
+    display: none;
+    position: absolute;
+    left: 15px;
+    cursor: pointer;
+    @include max-breakpoint(md) {
       display: block;
       z-index: 9999 !important;
     }
   }
-
-  #hover-over{
+  #hover-over {
     display: block;
     position: fixed;
     top: 0;
@@ -275,7 +267,7 @@ body{
   }
 }
 
-.two-boxes{
+.two-boxes {
   display: flex;
   position: fixed;
   top: 218px;
@@ -284,98 +276,132 @@ body{
   z-index: 4;
   transition: all .5s ease;
   opacity: 1;
-
-  @include max-breakpoint(full-hd){
-    opacity: 0;
+  transform: translate(-305px, 0); // @include max-breakpoint(full-hd){
+  //   opacity: 0;
+  // }
+  @include max-breakpoint(lg) {
+    top: 198px;
+    height: 60px;
   }
-
-  &.active{
+  @include max-breakpoint(md) {
+    top: 170px;
+    left: 305px;
+  }
+  @include max-breakpoint(md) {
+    display: none;
+  }
+  &.active {
     opacity: 1;
   }
-
-  .left-box{
+  .left-box {
     display: block;
     width: 170px;
     height: 80px;
     background-color: $primary;
     margin-right: 10px;
+    @include max-breakpoint(lg) {
+      height: 60px;
+    }
+    @include max-breakpoint(md) {
+      display: none;
+    }
   }
-
-  .right-box{
-    display: block;
+  .right-box {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
     width: auto;
     height: 80px;
     background-color: $primary;
     opacity: 0.8;
     color: white;
-    padding: 24px 45px;
-
-    h2{
+    padding: 0 45px;
+    @include max-breakpoint(lg) {
+      height: 60px;
+    }
+    h2 {
       text-transform: uppercase;
       font-weight: 300;
+      margin-bottom: 0;
+      flex-shrink: 0;
+      @include max-breakpoint(lg) {
+        font-size: 1.5rem;
+      }
+      @include max-breakpoint(lg) {
+        font-size: 20px;
+      }
     }
   }
 }
 
-#desktop-side-menu{
+#desktop-side-menu {
   display: block;
   position: fixed;
   background-color: white;
   width: 305px;
-  height: 100vh;
+  height: 100%;
   z-index: 3;
-  transform: translate(0,0);
+  transform: translate(-305px, 0);
   transition: all .5s ease;
-
-  @include max-breakpoint(full-hd){
-    transform: translate(-305px,0);
+  @include max-breakpoint(lg) {
+    width: 270px;
+    transform: translate(-270px, 0);
   }
-
-  @include max-breakpoint(md){
+  .blue {
+    width: 100%;
+    height: 70px;
+    background-color: $secondary;
+    position: fixed;
+    bottom: 0;
+  } // @include max-breakpoint(full-hd){
+  //   transform: translate(-305px,0);
+  // }
+  @include max-breakpoint(md) {
     display: none;
   }
-
-  &.active{
-    transform: translate(0,0);
+  &.active {
+    transform: translate(0, 0);
   }
-
-  .logo{
+  .logo {
     margin-top: 80px;
     margin-bottom: 80px;
-
-    img{
+    @include max-breakpoint(lg) {
+      margin: 60px 0;
+    }
+    img {
       display: block;
       width: 258px;
       margin-left: auto;
       margin-right: auto;
     }
   }
-
-  .nav-content{
+  .nav-content {
     margin-top: 205px;
     padding: 25px;
-
-    ul{
+    @include max-breakpoint(lg) {
+      margin-top: 170px;
+    }
+    ul {
       list-style: none;
       padding-left: 0;
       margin-bottom: 0;
-
-      li{
+      li {
         text-align: center;
         height: 50px;
         border-bottom: 1px solid lighten($letters-color, 35%);
         padding-top: 15px;
-
-        &:last-child{
+        &:last-child {
           border-bottom: none;
         }
-
-        a{
+        a {
           color: $letters-color;
           text-transform: uppercase;
           font-size: 16px;
-
-          &:hover{
+          @include max-breakpoint(lg) {
+            font-size: 14px;
+          }
+          &:hover {
             text-decoration: none;
             color: $primary;
           }
@@ -383,16 +409,12 @@ body{
       }
     }
   }
-
-  .social-icons{
+  .social-icons {
     margin-top: 50px;
     text-align: center;
-
-    svg{
+    svg {
       margin-right: 15px;
       font-size: 24px;
     }
   }
 }
-
-

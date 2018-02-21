@@ -14,12 +14,12 @@
 
     <div id="site-content">
 
-        <div class="back-logo">
+        <!-- <div class="back-logo">
             <a href="#"><img src=<%= require("./img/logo.png") %> alt="fusion tables" /></a>
             <div class="trigger2">
                 <i class="fas fa-bars"></i>
             </div>
-        </div>
+        </div> -->
 
 
         <div id="homepage">
@@ -27,39 +27,50 @@
             <%= require('html-loader!./inc/desktop-side-menu.html') %>
 
             <div class="container-fluid fluid-nav">
-                <div class="container">
+                <div class="container fluid-nav-cont">
                     <i class="fas fa-bars" id="trigger"></i>
+                    <img src="./img/logo.png" alt="fusion table" class="logo" />
                 </div>
             </div><!-- .container-fluid -->
 
-            <div class="container-fluid">
+            <div class="container-fluid slajder">
                 <div class="index-slider">
+                        <div class="arrow-right"></div>
                     <div class="owl-carousel owl-theme">
-                        <div class="slide"><img src=<%= require("./img/slider-1.jpg") %> alt="slider 1" /></div>
-                        <div class="slide"><img src=<%= require("./img/slider-1.jpg") %> alt="slider 1" /></div>
-                        <div class="slide"><img src=<%= require("./img/slider-1.jpg") %> alt="slider 1" /></div>
+                        <div class="slide col-md-12">
+                            <!-- <div class="arrow-right"></div> -->
+                            <img src=<%= require("./img/slider-1.jpg") %> alt="slider 1" />
+                        </div>
+                        <div class="slide col-md-12">
+                                <!-- <div class="arrow-right"></div> -->
+                            <img src=<%= require("./img/slider-1.jpg") %> alt="slider 1" />
+                        </div>
+                        <div class="slide col-md-12">
+                                <!-- <div class="arrow-right"></div> -->
+                            <img src=<%= require("./img/slider-1.jpg") %> alt="slider 1" />
+                        </div>
                     </div>
                 </div>
             </div><!-- .container-fluid -->
 
             <section class="container body-content">
-                <div class="row">
-                    <div class="col-md-4 footer-logo">
+                <div class="row body-content-row">
+                    <div class="col-sm-6 col-md-4 col-lg-4 footer-logo">
                         <img src="./img/logo.png" alt="fusion table" class="logo" />
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores autem distinctio dolor dolorem eaque et eveniet inventore ipsa labore
                             minima odit, officiis reiciendis repellat sequi, soluta tempore, tenetur ut vitae.
                         </p>
                     </div>
-                    <div class="col-md-4 contact">
+                    <div class="col-sm-6 col-md-4 col-lg-4 contact">
                         <p class="title"><a href="#">Kontakt</a></p>
                         <ul>
-                            <li><i class="fas fa-map-marker-alt"></i>Zmaja od noćaja 9, Belgrade, Serbia</li>
+                            <li><i class="fas fa-map-marker-alt"></i>Zmaja od noćaja 12, Belgrade, Serbia</li>
                             <li><a href="#"><i class="far fa-envelope"></i>support@fusiontables.rs</a></li>
                             <li><a href="#"><i class="fas fa-phone"></i>(+381) 11 123 456 <br> (+381) 63 123 456</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4 insta">
+                    <div class="col-sm-6 col-md-4 col-lg-3 insta">
                         <p class="title"><a href="#">Instagram feed</a></p>
                         <ul>
                             <li><a href="#"><img src=<%= require("./img/instagram-1.jpg") %> alt="instagram 1" /></a></li>
