@@ -15,11 +15,13 @@ import faInstagram from '@fortawesome/fontawesome-free-brands/faInstagram';
 import faEnvelope from '@fortawesome/fontawesome-free-regular/faEnvelope';
 import faLinkedin from '@fortawesome/fontawesome-free-brands/faLinkedin';
 import faPinterestSquare from '@fortawesome/fontawesome-free-brands/faPinterestSquare';
+import faSortDown from '@fortawesome/fontawesome-free-solid/faSortDown';
+
 
 
 
 // Add the icon to the library so you can use it in your page
-fontawesome.library.add(faPlus, faBars, faAngleRight, faFacebook, faInstagram, faMapMarkerAlt, faPhone, faEnvelope, faLinkedin, faPinterestSquare);
+fontawesome.library.add(faPlus, faBars, faAngleRight, faFacebook, faInstagram, faMapMarkerAlt, faPhone, faEnvelope, faLinkedin, faPinterestSquare, faSortDown);
 
 
 $(function () {

@@ -1,0 +1,92 @@
+.hero-image{
+    background: url('../img/collections/hero/collections-hero.jpg') no-repeat center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    @include max-breakpoint(xs){
+        display: none;
+    }
+}
+
+.collections{
+    padding: 30px 15px;
+    padding-top: 0;
+    @include max-breakpoint(xs){
+        padding-top: 30px;
+    }
+    .collections-grid{
+        padding: 0 15px;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-auto-rows: minmax(auto,auto);
+        grid-gap: 20px;
+        .collections-grid-item{
+            grid-column: span 3;
+            opacity: .7;
+            position: relative;
+            transition: all .5s ease;
+            @include max-breakpoint(lg){
+                grid-column: span 6;
+            }
+            @include max-breakpoint(sm){
+                opacity: 1;
+            }
+            @include max-breakpoint(xs){
+                grid-column: span 12;
+            }
+            &:hover{
+                opacity: 1;
+            }
+            &:hover .collections-text-wrapper{
+                opacity: 0;
+            }
+            &:hover .collections-image-wrapper{
+                transform: scale(1.07);
+            }
+        }
+        .collections-image-wrapper{
+            overflow: hidden;
+            transition: all .5s ease;
+            img{
+                @include max-breakpoint(lg){
+                    width: 100%;
+                }
+            }
+        }
+        .collections-text-wrapper{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $primary;
+            height: 45px;
+            transition: all .2s ease;
+            h3{
+                margin-bottom: 0;
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: $white;
+            }
+        }
+    }
+}
+
+.breadcrumb{
+    margin-bottom: 0;
+    background-color: $white;
+    padding-left: 0;
+    li.breadcrumb-item{
+            a{
+                color: $letters-color;
+                text-transform: uppercase;
+                font-size: 10px;
+            }
+            &.active a{
+                color: $primary;
+            }
+    }
+}
