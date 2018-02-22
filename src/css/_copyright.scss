@@ -1,8 +1,12 @@
+.full2{
+    height: 70px;
+    background-color: $secondary;
 .made-by{
     height: 70px;
     background-color: $secondary;
     display: flex;
     align-items: center;
+    padding: 0 15px;
     .container{
         margin-left: 0;
         .row{
@@ -48,7 +52,7 @@
             }
         }
     }
-
+}
 }
 p.copyright{
     width: 100% !important;

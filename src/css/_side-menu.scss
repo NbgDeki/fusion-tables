@@ -125,7 +125,7 @@ a {
   text-align: center;
   width: 80%;
   margin: 0 auto;
-  margin-top: 221px;
+  margin-top: 160px;
   .card {
     border-radius: 0;
     border-top: none;
@@ -149,7 +149,7 @@ a {
         // opacity: .7;
       }
       a {
-        font-size: 16px;
+        font-size: 14px;
         color: $letters-color;
         text-decoration: none;
         font-weight: 400;
@@ -159,7 +159,7 @@ a {
       }
       .plusic {
         position: absolute;
-        top: 12px;
+        top: 8px;
         right: 15px;
         &.collapsed {
           svg {
@@ -170,7 +170,7 @@ a {
           color: $letters-color;
           font-size: 16px;
           cursor: pointer;
-          transform: rotate(45deg);
+          // transform: rotate(180deg);
           @include max-breakpoint(lg) {
             font-size: 14px;
           }
@@ -181,6 +181,7 @@ a {
       padding-left: 2.5rem;
       padding-right: 2.5rem;
       background-color: $white;
+      border-top: 1px solid rgba(0, 0, 0, 0.125);
       p {
         a {
           text-decoration: none;
@@ -270,8 +271,8 @@ a {
 .two-boxes {
   display: flex;
   position: fixed;
-  top: 218px;
-  height: 80px;
+  top: 152px;
+  height: 60px;
   flex-wrap: nowrap;
   z-index: 4;
   transition: all .5s ease;
@@ -279,14 +280,14 @@ a {
   transform: translate(-305px, 0); // @include max-breakpoint(full-hd){
   //   opacity: 0;
   // }
-  @include max-breakpoint(lg) {
-    top: 198px;
-    height: 60px;
-  }
-  @include max-breakpoint(md) {
-    top: 170px;
-    left: 305px;
-  }
+  // @include max-breakpoint(lg) {
+  //   top: 198px;
+  //   height: 60px;
+  // }
+  // @include max-breakpoint(md) {
+  //   top: 170px;
+  //   left: 305px;
+  // }
   @include max-breakpoint(md) {
     display: none;
   }
@@ -296,7 +297,7 @@ a {
   .left-box {
     display: block;
     width: 170px;
-    height: 80px;
+    height: 70px;
     background-color: $primary;
     margin-right: 10px;
     @include max-breakpoint(lg) {
@@ -312,7 +313,7 @@ a {
     justify-content: center;
     align-items: center;
     width: auto;
-    height: 80px;
+    height: 70px;
     background-color: $primary;
     opacity: 0.8;
     color: white;
@@ -325,9 +326,10 @@ a {
       font-weight: 300;
       margin-bottom: 0;
       flex-shrink: 0;
-      @include max-breakpoint(lg) {
-        font-size: 1.5rem;
-      }
+      font-size: 25px;
+      // @include max-breakpoint(lg) {
+      //   font-size: 1.5rem;
+      // }
       @include max-breakpoint(lg) {
         font-size: 20px;
       }
@@ -339,10 +341,10 @@ a {
   display: block;
   position: fixed;
   background-color: white;
-  width: 305px;
+  width: 270px;
   height: 100%;
   z-index: 3;
-  transform: translate(-305px, 0);
+  transform: translate(-270px, 0);
   transition: all .5s ease;
   @include max-breakpoint(lg) {
     width: 270px;
@@ -364,14 +366,14 @@ a {
     transform: translate(0, 0);
   }
   .logo {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    @include max-breakpoint(lg) {
-      margin: 60px 0;
-    }
+    margin-top: 50px;
+    margin-bottom: 50px;
+    // @include max-breakpoint(lg) {
+    //   margin: 60px 0;
+    // }
     img {
       display: block;
-      width: 258px;
+      width: 230px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -410,7 +412,7 @@ a {
     }
   }
   .social-icons {
-    margin-top: 50px;
+    margin-top: 40px;
     text-align: center;
     svg {
       margin-right: 15px;

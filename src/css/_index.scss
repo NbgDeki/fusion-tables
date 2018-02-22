@@ -1,6 +1,6 @@
 #site-content{
-  width: calc(100vw - 305px);
-  transform: translate(305px , 0);
+  width: calc(100vw - 270px);
+  transform: translate(270px , 0);
   @include max-breakpoint(lg){
     width: calc(100vw - 270px);
     transform: translate(270px , 0);
@@ -74,9 +74,7 @@
   }
 
   .body-content{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-left: 0;
+    padding: 30px 15px;
     .body-content-row{
       display: flex;
       @include max-breakpoint(md){
@@ -95,8 +93,7 @@
         height: auto;
         margin-bottom: 30px;
         @include max-breakpoint(xs){
-          display: inline-block;
-          width: 200px;
+          display: none;
         }
       }
 
