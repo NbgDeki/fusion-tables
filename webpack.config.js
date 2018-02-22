@@ -95,6 +95,10 @@ module.exports = {
             filename: 'collections.html',
             template: 'src/collections.html'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'product.html',
+            template: 'src/product.html'
+        }),
         /*new webpack.optimize.CommonsChunkPlugin({
             name: "commons",
             filename: "commons.js",
