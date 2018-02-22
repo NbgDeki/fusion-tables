@@ -41,34 +41,35 @@
       display: block;
       width: 100%;
       position: absolute;
-      top: 48%;
+      top: 50%;
+      transform: translate(0 , -50%);
 
-      @include min-breakpoint(lg) {
-        top: 38%;
-      }
+      // @include min-breakpoint(lg) {
+      //   top: 38%;
+      // }
 
-      @include min-breakpoint(md) {
-        top: 43%;
-      }
+      // @include min-breakpoint(md) {
+      //   top: 43%;
+      // }
 
-      @include max-breakpoint(sm){
+      @include max-breakpoint(xs){
         display: none;
       }
 
       .owl-prev{
        position: absolute;
-        
+       left: 40px;
       }
 
       .owl-next{
         position: absolute;
-        left: 50%;
-        margin-left: 610px;
-
+        right: 40px;
+        // left: 50%;
+        // margin-left: 610px;
         @include max-breakpoint(lg) {
-          left: auto;
-          margin-left: auto;
-          right: 30px;
+          // left: auto;
+          // margin-left: auto;
+          // right: 30px;
         }
       }
     }

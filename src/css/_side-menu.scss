@@ -240,7 +240,7 @@ a {
     height: 60px;
     justify-content: center;
     @include max-breakpoint(xs){
-      justify-content: flex-end;
+      justify-content: space-between;
     }
     img{
       width: 200px;
@@ -261,7 +261,11 @@ a {
       display: block;
       z-index: 9999 !important;
     }
+    @include max-breakpoint(xs) {
+      position: unset;
+    }
   }
+  
   #hover-over {
     display: block;
     position: fixed;
