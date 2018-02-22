@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fusion tables</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
-</head>
+<link href="style.css" rel="stylesheet"></head>
 
 <body>
-    <%= require('html-loader!./inc/mobile-side-menu.html') %>
+    <nav id=side-menu> <div id=accordion> <div class=card> <div class=card-header id=heading1> <h5 class=mb-0> <a href=#>home</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading2> <h5 class=mb-0> <a href=#>o nama</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading3> <h5 class=mb-0> <a href=#>kolekcije</a> <div class="plusic collapsed" data-toggle=collapse data-target=#collapse2 aria-expanded=false aria-controls=collapse2> <i class="fas fa-plus"></i> </div> </h5> </div> <div id=collapse2 class=collapse aria-labelledby=heading2 data-parent=#accordion> <div class=card-body> <p> <a href=#>home</a> </p> <p> <a href=#>o nama</a> </p> <p> <a href=#>kolekcije</a> </p> <p> <a href=#>dizajn</a> </p> <p> <a href=#>kvalitet</a> </p> <p> <a href=#>iskustva</a> </p> <p> <a href=#>galerija</a> </p> </div> </div> </div> <div class=card> <div class=card-header id=heading4> <h5 class=mb-0> <a href=#>dizajn</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading5> <h5 class=mb-0> <a href=#>iskustva</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading6> <h5 class=mb-0> <a href=#>kvalitet</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading-desktop-7> <h5 class=mb-0> <a href=#>galerija</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading-desktop-7> <h5 class=mb-0> <a href=#>press</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading-desktop-7> <h5 class=mb-0> <a href=#>kontakt</a> </h5> </div> </div> </div> </nav>
 
     <div id="site-content">
 
         <!-- <div class="back-logo">
-            <a href="#"><img src=<%= require("./img/logo.png") %> alt="fusion tables" /></a>
+            <a href="#"><img src=img/logo.png alt="fusion tables" /></a>
             <div class="trigger2">
                 <i class="fas fa-bars"></i>
             </div>
@@ -158,7 +158,7 @@
 
             <section>
                 <div class="container-fluid hero-image">
-                    <!-- <img src=<%= require("./img/collections/hero/collections-hero.jpg") %> alt="hero" /> -->
+                    <!-- <img src=img/collections-hero.jpg alt="hero" /> -->
                 </div>
             </section>
 
@@ -180,7 +180,7 @@
                     <div class="row collections-grid">
                         <div class="collections-grid-item">
                                 <div class="collections-image-wrapper">
-                                 <a href=""><img class="img-fluid" src=<%= require("./img/collections/tables/1.jpg") %> alt="table 1" /></a>   
+                                 <a href=""><img class="img-fluid" src=img/1.jpg alt="table 1" /></a>   
                                 </div>
                                 <div class="collections-text-wrapper">
                                     <h3>vintage sto</h3>
@@ -188,7 +188,7 @@
                         </div>
                         <div class="collections-grid-item">
                                 <div class="collections-image-wrapper">
-                                <a href=""><img class="img-fluid" src=<%= require("./img/collections/tables/2.jpg") %> alt="table 2" /></a>    
+                                <a href=""><img class="img-fluid" src=img/2.jpg alt="table 2" /></a>    
                                 </div>
                                 <div class="collections-text-wrapper">
                                     <h3>vintage sto</h3>
@@ -196,7 +196,7 @@
                         </div>
                         <div class="collections-grid-item">
                                 <div class="collections-image-wrapper">
-                                <a href=""><img class="img-fluid" src=<%= require("./img/collections/tables/3.jpg") %> alt="table 3" /></a>   
+                                <a href=""><img class="img-fluid" src=img/3.jpg alt="table 3" /></a>   
                                 </div>
                                 <div class="collections-text-wrapper">
                                     <h3>vintage sto</h3>
@@ -204,7 +204,7 @@
                         </div>
                         <div class="collections-grid-item">
                                 <div class="collections-image-wrapper">
-                                <a href=""><img class="img-fluid" src=<%= require("./img/collections/tables/4.jpg") %> alt="table 4" /></a>    
+                                <a href=""><img class="img-fluid" src=img/4.jpg alt="table 4" /></a>    
                                 </div>
                                 <div class="collections-text-wrapper">
                                     <h3>vintage sto</h3>
@@ -212,7 +212,7 @@
                         </div>
                         <div class="collections-grid-item">
                                 <div class="collections-image-wrapper">
-                                <a href=""><img class="img-fluid" src=<%= require("./img/collections/tables/5.jpg") %> alt="table 5" /></a>    
+                                <a href=""><img class="img-fluid" src=img/5.jpg alt="table 5" /></a>    
                                 </div>
                                 <div class="collections-text-wrapper">
                                     <h3>vintage sto</h3>
@@ -220,7 +220,7 @@
                         </div>
                         <div class="collections-grid-item">
                                 <div class="collections-image-wrapper">
-                                <a href=""><img class="img-fluid" src=<%= require("./img/collections/tables/6.jpg") %> alt="table 6" /></a>    
+                                <a href=""><img class="img-fluid" src=img/6.jpg alt="table 6" /></a>    
                                 </div>
                                 <div class="collections-text-wrapper">
                                     <h3>vintage sto</h3>
@@ -228,7 +228,7 @@
                         </div>
                         <div class="collections-grid-item">
                                 <div class="collections-image-wrapper">
-                                <a href=""><img class="img-fluid" src=<%= require("./img/collections/tables/7.jpg") %> alt="table 7" /></a>    
+                                <a href=""><img class="img-fluid" src=img/7.jpg alt="table 7" /></a>    
                                 </div>
                                 <div class="collections-text-wrapper">
                                     <h3>vintage sto</h3>
@@ -236,7 +236,7 @@
                         </div>
                         <div class="collections-grid-item">
                                 <div class="collections-image-wrapper">
-                                <a href=""><img class="img-fluid" src=<%= require("./img/collections/tables/8.jpg") %> alt="table 8" /></a>    
+                                <a href=""><img class="img-fluid" src=img/8.jpg alt="table 8" /></a>    
                                 </div>
                                 <div class="collections-text-wrapper">
                                     <h3>vintage sto</h3>
@@ -251,7 +251,6 @@
                 <div class="row body-content-row">
                     <div class="col-sm-6 col-md-4 col-lg-4 footer-logo">
                         <img src="./img/logo.png" alt="fusion table" class="logo" />
-                        <img src=<%= require("./img/logo.png") %> alt="table 4" />
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores autem distinctio dolor dolorem eaque et eveniet inventore ipsa labore
                             minima odit, officiis reiciendis repellat sequi, soluta tempore, tenetur ut vitae.
@@ -268,12 +267,12 @@
                     <div class="col-sm-6 col-md-4 col-lg-4 insta">
                         <p class="title"><a href="#">Instagram feed</a></p>
                         <ul>
-                            <li><a href="#"><img src=<%= require("./img/instagram-1.jpg") %> alt="instagram 1" /></a></li>
-                            <li><a href="#"><img src=<%= require("./img/instagram-2.jpg") %> alt="instagram 2" /></a></li>
-                            <li><a href="#"><img src=<%= require("./img/instagram-3.jpg") %> alt="instagram 3" /></a></li>
-                            <li><a href="#"><img src=<%= require("./img/instagram-4.jpg") %> alt="instagram 4" /></a></li>
-                            <li><a href="#"><img src=<%= require("./img/instagram-5.jpg") %> alt="instagram 5" /></a></li>
-                            <li><a href="#"><img src=<%= require("./img/instagram-6.jpg") %> alt="instagram 6" /></a></li>
+                            <li><a href="#"><img src=img/instagram-1.jpg alt="instagram 1" /></a></li>
+                            <li><a href="#"><img src=img/instagram-2.jpg alt="instagram 2" /></a></li>
+                            <li><a href="#"><img src=img/instagram-3.jpg alt="instagram 3" /></a></li>
+                            <li><a href="#"><img src=img/instagram-4.jpg alt="instagram 4" /></a></li>
+                            <li><a href="#"><img src=img/instagram-5.jpg alt="instagram 5" /></a></li>
+                            <li><a href="#"><img src=img/instagram-6.jpg alt="instagram 6" /></a></li>
                         </ul>
                         <p>Pratite nas: <a href="#">@fusiontablesrs</a></p>
                     </div>
@@ -281,12 +280,12 @@
             </section><!-- .container -->
         </div>
 
-            <%= require('html-loader!./inc/footer.html') %>
+            <section> <footer> <div class=full2> <div class="container made-by"> <div class=container> <div class=row> <div class="col-sm-12 col-md-8 col-lg-8 copy"> <p class=copyright>© Copyright 2018. All Rights Reserved, MiniStudio Publishing Group.</p> </div> <div class="col-sm-12 col-md-4 col-lg-4 copy-social"> <div class=social-icons> <a href=#><i class="fab fa-facebook"></i></a> <a href=#><i class="fab fa-linkedin"></i></a> <a href=#><i class="fab fa-instagram"></i></a> <a href=#><i class="fab fa-pinterest-square"></i></a> </div> </div> </div> </div> </div> </div> </footer> </section>
 
         </div>
 
 
     </div>
-</body>
+<script type="text/javascript" src="app.bundle.js"></script></body>
 
 </html>
