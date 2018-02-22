@@ -45,7 +45,7 @@ a {
     max-width: 1150px;
   }
   @include media-breakpoint-up(xl) {
-    max-width: 1290px;
+    max-width: 1200px;
   }
 }
 
@@ -132,8 +132,9 @@ a {
     border-left: none;
     border-right: none;
     .card-header {
+      padding: 0.5rem 1.25rem;
       position: relative;
-      background-color: $white;
+      background-color: #f9f9f9;
       border-radius: 0;
       transition: all .3s ease;
       border: none;
@@ -159,7 +160,7 @@ a {
       }
       .plusic {
         position: absolute;
-        top: 8px;
+        top: 5px;
         right: 15px;
         &.collapsed {
           svg {
@@ -180,7 +181,7 @@ a {
     .card-body {
       padding-left: 2.5rem;
       padding-right: 2.5rem;
-      background-color: $white;
+      background-color: #f9f9f9;
       border-top: 1px solid rgba(0, 0, 0, 0.125);
       p {
         a {
@@ -238,8 +239,14 @@ a {
     align-items: center;
     height: 60px;
     justify-content: center;
+    @include max-breakpoint(xs){
+      justify-content: flex-end;
+    }
     img{
       width: 200px;
+      @include max-breakpoint(xs){
+        margin-right: 10px;
+      }
     }
   }
   #trigger {
@@ -340,7 +347,7 @@ a {
 #desktop-side-menu {
   display: block;
   position: fixed;
-  background-color: white;
+  background-color: #f9f9f9;
   width: 270px;
   height: 100%;
   z-index: 3;
