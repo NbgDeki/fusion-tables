@@ -99,9 +99,13 @@ module.exports = {
             filename: 'product.html',
             template: 'src/product.html'
         }),
-      new HtmlWebpackPlugin({
+        new HtmlWebpackPlugin({
             filename: 'about-us.html',
             template: 'src/about-us.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'contact.html',
+            template: 'src/contact.html'
         }),
         new HtmlWebpackPlugin({
             filename: 'quality.html',
