@@ -203,7 +203,8 @@
                             </div>
                         </div>
                         <div class="col-sm-12">
-                            <h3>Opis proizvoda</h3>
+                            <h3>Opis proizvoda </h3>
+                            <a href="#"><img src=<%= require("./img/pdf-icon.jpg") %> alt="download" class="download2" /></a>
                             <h5>Elegantni evropski dizajn</h5>
                             <p>
                                 Elegantni dizajn Fusiontable stolova koristi ridigni belo obojeni čelični ram, u koji je smeštena sva snaga i stabilnost, koje su neophodne za držanje jedne igračke
@@ -233,8 +234,14 @@
                         </div>
                     </div>
                 </div><!-- .desctiption -->
-                <div class="container">
+                <div class="container" style="position: relative">
                     <div class="row">
+                        <div id="arrow-wrapper">
+                            <div style="position: relative">
+                                <img src=<%= require("./img/blue-left-arrow.jpg") %> alt="beli sto" class="blue-left-arrow" />
+                                <img src=<%= require("./img/blue-right-arrow.jpg") %> alt="beli sto" class="blue-right-arrow" />
+                            </div>
+                        </div>
                         <div class="owl-carousel product-slider owl-theme col-md-12">
                             <div class="slide">
                                 <img src=<%= require("./img/product-slider.jpg") %> alt="beli sto" />

@@ -12,14 +12,22 @@ $(function () {
         smartSpeed: 700,
     });
 
-    $('.product-slider').owlCarousel({
+    var owl = $('.product-slider').owlCarousel({
         items: 1,
         autoHeight: true,
-        nav: true,
-        navText: ['<img src="https://ministudio.rs/download/blue-left-arrow.jpg" class="blue-left-arrow">', '<img src="https://ministudio.rs/download/blue-right-arrow.jpg" class="blue-right-arrow">'],
+        nav: false,
+        //navText: ['<img src="https://ministudio.rs/download/blue-left-arrow.jpg" class="blue-left-arrow">', '<img src="https://ministudio.rs/download/blue-right-arrow.jpg" class="blue-right-arrow">'],
         loop: true,
         autoplay: true,
         smartSpeed: 700,
+    });
+
+    $(".blue-left-arrow").click(function () {
+        owl.trigger('prev.owl.carousel');
+    });
+
+    $(".blue-right-arrow").click(function () {
+        owl.trigger('next.owl.carousel');
     });
 });
 

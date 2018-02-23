@@ -39,14 +39,23 @@
   }
 
   .description{
-    padding: 40px;
+    padding: 40px 40px 40px 90px;
     position: relative;
+
+    @include max-breakpoint(sm){
+      padding-left: 40px;
+    }
 
     h3{
       font-weight: 300;
       color: $letters-color;
       font-size: 30px;
       margin-bottom: 40px;
+
+      @include max-breakpoint(sm){
+        margin-bottom: 20px;
+      }
+
     }
 
     h5{
@@ -65,15 +74,33 @@
       margin: 30px 0 30px 0;
     }
 
+    .download2{
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: none;
+
+      @include max-breakpoint(sm){
+        position: relative;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
     .pdf{
       display: block;
       position: absolute;
       top: 120px;
-      left: 0;
+      left: 50px;
       transform: translate(-40px, 0);
 
       @include max-breakpoint(md){
         transform: translate(0, 0);
+        left: 15px;
+      }
+
+      @include max-breakpoint(sm){
+        display: none;
       }
 
       .relative{
@@ -97,10 +124,6 @@
           position: absolute;
           top: 0;
           right: 0;
-
-          @include max-breakpoint(md){
-            display: none;
-          }
         }
       }
 
@@ -112,20 +135,72 @@
     padding-right: 90px;
     margin-bottom: 50px;
 
+    @include max-breakpoint(xs){
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
     .owl-nav{
-      display: block;
+      display: none;
       width: 100%;
       position: absolute;
       top: 45%;
 
-      .owl-prev{
-        position: absolute;
-        left: -4%;
+    }
+
+
+  }
+
+  #arrow-wrapper{
+    position: absolute;
+    top: 42%;
+    width: 100%;
+    padding: 0 40px 0 40px;
+    z-index: 2;
+
+    @include max-breakpoint(sm){
+      top: 35%;
+    }
+
+    @include max-breakpoint(xs){
+      top: 30%;
+    }
+
+    .blue-left-arrow{
+      display: block;
+      cursor: pointer;
+      width: 70px;
+      height: auto;
+      position: absolute;
+      left: 0;
+
+      @include max-breakpoint(sm){
+        width: 50px;
+        left: 15px;
       }
 
-      .owl-next{
-        position: absolute;
-        right: 11%;
+      @include max-breakpoint(xs){
+        width: 50px;
+        left: -20px;
+      }
+    }
+
+    .blue-right-arrow{
+      display: block;
+      cursor: pointer;
+      width: 70px;
+      height: auto;
+      position: absolute;
+      right: 0;
+
+      @include max-breakpoint(sm){
+        width: 50px;
+        right: 15px;
+      }
+
+      @include max-breakpoint(xs){
+        width: 50px;
+        right: -20px;
       }
     }
   }
