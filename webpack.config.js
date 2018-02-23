@@ -96,6 +96,10 @@ module.exports = {
             template: 'src/collections.html'
         }),
         new HtmlWebpackPlugin({
+            filename: 'product.html',
+            template: 'src/product.html'
+        }),
+      new HtmlWebpackPlugin({
             filename: 'about-us.html',
             template: 'src/about-us.html'
         }),

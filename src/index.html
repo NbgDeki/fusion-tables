@@ -36,7 +36,7 @@
             <div class="container-fluid slajder">
                 <div class="index-slider">
                         <div class="arrow-right"></div>
-                    <div class="owl-carousel owl-theme">
+                    <div class="owl-carousel home-slider owl-theme">
                         <div class="slide col-md-12">
                             <!-- <div class="arrow-right"></div> -->
                             <img src=<%= require("./img/slider-1.jpg") %> alt="slider 1" />
@@ -67,8 +67,10 @@
                         <p class="title"><a href="#">Kontakt</a></p>
                         <ul>
                             <li><i class="fas fa-map-marker-alt"></i>Zmaja od Noćaja 12, Beograd, Srbija</li>
-                            <li><a href="#"><i class="far fa-envelope"></i>support@fusiontables.rs</a></li>
-                            <li><a href="#"><i class="fas fa-phone"></i>(+381) 11 123 456 <br> (+381) 63 778 00 88</a></li>
+
+                            <li><a href="mailto:support@fusiontables.rs"><i class="far fa-envelope"></i>support@fusiontables.rs</a></li>
+                            <li><i class="fas fa-phone"></i><a href="tel:+381113282710">(+381) 11 32 82 710</a> <br> <a href="tel:+391637780088">(+381) 63 778 00 88</a></li>
+
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-4 insta">
@@ -80,7 +82,7 @@
             </section><!-- .container -->
         </div>
 
-            <%= require('html-loader!./inc/footer.html') %>
+        <%= require('html-loader!./inc/footer.html') %>
 
         </div>
 

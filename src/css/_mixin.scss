@@ -17,6 +17,9 @@
     @else if $class == xl {
       @media (max-width: 1365px) { @content; }
     }
+    @else if $class == xxl {
+      @media (max-width: 1500px) { @content; }
+    }
     @else if $class == full-hd {
       @media (max-width: 1900px) { @content; }
     }
@@ -41,6 +44,12 @@
   
     @else if $class == lg {
       @media (min-width: 1200px) { @content; }
+    }
+    @else if $class == xl {
+      @media (min-width: 1365px) { @content; }
+    }
+    @else if $class == xxl {
+      @media (min-width: 1500px) { @content; }
     }
     @else if $class == full-hd {
       @media (min-width: 1900px) { @content; }
