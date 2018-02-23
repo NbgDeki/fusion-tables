@@ -1,6 +1,22 @@
 #product-page{
   box-sizing: border-box;
 
+  .left-column{
+    width: 75%;
+
+    @include max-breakpoint(xxl){
+      width: 100%;
+    }
+  }
+
+  .right-column{
+    width: 25%;
+
+    @include max-breakpoint(xxl){
+      width: 100%;
+    }
+  }
+
   .img-fluid2{
     width: 100%;
     height: auto;
@@ -15,10 +31,11 @@
     padding: 50px;
     transform: translate(-80px, 0);
 
-    @include max-breakpoint(lg){
+    @include max-breakpoint(xxl){
       transform: translate(0, 0);
       margin-top: -40px;
-      width: 100%;
+      margin-left: 40px;
+      width: calc(100% - 80px);
     }
 
     p{
@@ -124,6 +141,7 @@
           position: absolute;
           top: 0;
           right: 0;
+          height: 300px;
         }
       }
 
