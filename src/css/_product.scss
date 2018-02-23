@@ -15,8 +15,10 @@
     padding: 50px;
     transform: translate(-80px, 0);
 
-    @include max-breakpoint(xl){
+    @include max-breakpoint(lg){
       transform: translate(0, 0);
+      margin-top: -40px;
+      width: 100%;
     }
 
     p{

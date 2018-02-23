@@ -16,7 +16,7 @@ $(function () {
         items: 1,
         autoHeight: true,
         nav: true,
-        navText: ['<img src="https://ministudio.rs/download/blue-left-arrow.jpg">', '<img src="https://ministudio.rs/download/blue-right-arrow.jpg">'],
+        navText: ['<img src="https://ministudio.rs/download/blue-left-arrow.jpg" class="blue-left-arrow">', '<img src="https://ministudio.rs/download/blue-right-arrow.jpg" class="blue-right-arrow">'],
         loop: true,
         autoplay: true,
         smartSpeed: 700,
