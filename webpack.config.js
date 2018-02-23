@@ -107,6 +107,14 @@ module.exports = {
             filename: 'contact.html',
             template: 'src/contact.html'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'quality.html',
+            template: 'src/quality.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'design.html',
+            template: 'src/design.html'
+        }),
         /*new webpack.optimize.CommonsChunkPlugin({
             name: "commons",
             filename: "commons.js",
