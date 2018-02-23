@@ -12,11 +12,11 @@
         }
     }
     .o-nama-text{
-        grid-column: 2/8;
+        grid-column: 2/12;
         @include max-breakpoint(sm){
             grid-column: 2/12;
         }
-        h4{
+        h5{
             font-size: 30px;
             font-weight: 300;
             text-transform: uppercase;
@@ -32,15 +32,8 @@
                 margin-bottom: 45px;
             }
         }
-    }
-    .o-nama-img{
-        grid-column: 8/12;
-        padding-left: 50px;
-        @include max-breakpoint(sm){
-            display: none;
-        }
         img{
-            margin-bottom: 20px;
+            margin-bottom: 35px;
         }
     }
 }
