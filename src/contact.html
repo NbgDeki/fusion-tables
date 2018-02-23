@@ -29,7 +29,7 @@
                     
                         </div>
                         <div class="right-box">
-                            <h2>beli sto</h2>
+                            <h2>kontakt</h2>
                         </div>
                     </div>
                     
@@ -134,19 +134,15 @@
                             <a href="#">
                                 <i class="fab fa-facebook"></i>
                             </a>
-                            <!--
-                            <a href="#">
+                            <!-- <a href="#">
                                 <i class="fab fa-linkedin"></i>
-                            </a>
-                            -->
+                            </a> -->
                             <a href="#">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <!--
-                            <a href="#">
+                            <!-- <a href="#">
                                 <i class="fab fa-pinterest-square"></i>
-                            </a>
-                            -->
+                            </a> -->
                         </div>
                         <div class="blue">
                     
@@ -161,101 +157,67 @@
             </div><!-- .container-fluid -->
 
             <section>
-                <div class="container-fluid hero-image">
+                <div class="container-fluid hero-contact-image">
                     <!-- <img src=<%= require("./img/collections/hero/collections-hero.jpg") %> alt="hero" /> -->
                 </div>
             </section>
 
             <section>
-                <div class="container">
+                <div class="container" style="padding: 0 15px;">
                     <div class="row">
                         <div class="col-lg-12">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">home</a></li>
-                                <li class="breadcrumb-item"><a href="#">kolekcije</a></li>
-                                <li class="breadcrumb-item active"><a href="">beli sto</a></li>
+                                <li class="breadcrumb-item active"><a href="#">kontakt</a></li>
                             </ol>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="product-page">
+            <section id="contact">
                 <div class="container">
                     <div class="row">
-                        <div class="left-column">
-                            <img class="img-fluid2" src=<%= require("./img/beli-sto.jpg") %> alt="beli sto" />
-                        </div>
-                        <div class="right-column">
-                            <div class="text-holder">
-                                <p><span>Spoljne dimenzije stola</span>: 2.30 m x 1.34 m ; visina : 0.75 m (52.8” x 90.6”; visina : 29.5”)</p>
-                                <p><span>Igrački deo</span>: 1.92 m x 0.96 m (37.8” x 75.6”)</p>
-                                <p>Optimalne dimenzije prostorije *4.90 m x 3.95 m (192” x 154”) (*) sa standardnim & Pro-Cup Aramith ompletom aksesoara</p>
-                                <p>Minimalne dimenzije prostorije* 4.38 m x 3.42 m (171” x 134”) (*) sa premijum Aramith kompletom aksesoara</p>
-                                <p><span>Boja metalnog rama</span>: RAL9003 Bela / Sjaj: 30% (saten)</p>
-                            </div>
+                        <div class="col-md-12">
+                            <h2>Kontaktirajte nas</h2>
                         </div>
                     </div>
                 </div>
-
-                <div class="container description">
+                <div class="container form-padding">
                     <div class="row">
-                        <div class="pdf">
-                            <div class="relative">
-                                <a href="#"><img src=<%= require("./img/pdf-icon.jpg") %> alt="download" class="download" /></a>
-                                <img src=<%= require("./img/pdf-line.jpg") %> alt="pdf line" class="line" />
+                        <div class="col-md-4 vertical-center">
+                            <div>
+                                <img src=<%= require("./img/ministudio.png") %> alt="ministudio" class="ministudio" />
+                                <ul>
+                                    <li><i class="fas fa-map-marker-alt"></i>Zmaja od Noćaja 12, Beograd, Srbija</li>
+                                    <li><a href="mailto:support@fusiontables.rs"><i class="far fa-envelope"></i>support@fusiontables.rs</a></li>
+                                    <li><i class="fas fa-phone"></i><a href="tel:+381113282710">(+381) 11 32 82 710</a> <br> <a href="tel:+391637780088">(+381) 63 778 00 88</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-sm-12">
-                            <h3>Opis proizvoda </h3>
-                            <a href="#"><img src=<%= require("./img/pdf-icon.jpg") %> alt="download" class="download2" /></a>
-                            <h5>Elegantni evropski dizajn</h5>
-                            <p>
-                                Elegantni dizajn Fusiontable stolova koristi ridigni belo obojeni čelični ram, u koji je smeštena sva snaga i stabilnost, koje su neophodne za držanje jedne igračke
-                                površine u mestu. Svi bilijarski aksesoari će biti smešteni na stolu za bilijar, a niko neće znati za njih, sve dok im vi to ne otkrijete.
-                            </p>
+                        <div class="col-md-8">
+                            <form action="#" class="forma">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="name">Ime <span>*</span></label>
+                                            <input type="text" id="name" name="name">
 
-                            <h5>Dizajn džepova koji je u procesu patentiranja</h5>
-                            <p>
-                                Kako bi uspešno sve smestili u uzanu gornju površinu Fusiontables modela, dizajneri ovog brenda kreirali su jedinstveno rešenje za džepove. Upotrebom hi-tech
-                                najlonske tkanine, ovi džepovi za koje se čeka patent se rašire kada su u njima kugle, da bi se nakon igre vratili u svoje prvobitno stanje.
-                            </p>
+                                            <label for="email">E-mail adresa <span>*</span></label>
+                                            <input type="email" id="email" name="email">
 
-                            <h5>Spremni za igru u svako doba</h5>
-                            <p>
-                                Jedinstvena dizajnerska rešenja ovih stolova, ostavljaju dovoljno prostora za sve aksesoare ispod njegove gornje površine. Praznina između površina –
-                                bilijarske i trpezarijske, idealna je za odlaganje bilijarskih štapova i svih ostalih neophodnosti. Unikatni džepovi za kugle za koje se čeka patent su
-                                prostor u kom se kugle nalaze kada ne igrate bilijar, a nikada se neće previše rastegnuti.
-                            </p>
+                                            <label for="phone">Telefon</label>
+                                            <input type="text" id="phone" name="phone">
 
-                            <h5>Easy-Lift sistem za koji se čeka patent</h5>
-                            <p>
-                                Opcioni Easy-Lift sistem sa oprugama dozvoljava vam da sa lakoćom izdignete svoj sto za dodatnih 75 mm na standardnu visinu trpezarijskog stola od 75 cm,
-                                kako biste postigli optimalnu visinu za partiju bilijara. Ovaj sistem ne zahteva održavanje i ima osobine automatskog zaključavanja i
-                                nivelisanja za koje se čeka patent, a pruža vam maksimalnu.
-                            </p>
-                            <div class="social">Podeli: <a href="#"><img src=<%= require("./img/social-icons.jpg") %> alt="social" /></a></div>
-                        </div>
-                    </div>
-                </div><!-- .desctiption -->
-                <div class="container" style="position: relative">
-                    <div class="row">
-                        <div id="arrow-wrapper">
-                            <div style="position: relative">
-                                <img src=<%= require("./img/blue-left-arrow.jpg") %> alt="beli sto" class="blue-left-arrow" />
-                                <img src=<%= require("./img/blue-right-arrow.jpg") %> alt="beli sto" class="blue-right-arrow" />
-                            </div>
-                        </div>
-                        <div class="owl-carousel product-slider owl-theme col-md-12">
-                            <div class="slide">
-                                <img src=<%= require("./img/product-slider.jpg") %> alt="beli sto" />
-                            </div>
-                            <div class="slide">
-                                <img src=<%= require("./img/product-slider.jpg") %> alt="beli sto" />
-                            </div>
-                            <div class="slide">
-                                <img src=<%= require("./img/product-slider.jpg") %> alt="beli sto" />
-                            </div>
+                                            <button class="btn btn-primary" type="submit">Pošalji</button>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="message">Poruka <span>*</span></label>
+                                            <textarea name="message" id="message" cols="5" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -280,8 +242,7 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-4 insta">
                         <p class="title"><a href="#">Instagram feed</a></p>
-                        <!-- LightWidget WIDGET -->
-                        <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/4379931830f0549a9833d6dcac9dcbcc.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+                        <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/4379931830f0549a9833d6dcac9dcbcc.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
                         <p>Pratite nas: <a href="#">@fusiontablesrs</a></p>
                     </div>
                 </div>
