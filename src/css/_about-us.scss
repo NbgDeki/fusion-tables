@@ -1,0 +1,39 @@
+.about-us{
+    @include max-breakpoint(xs){
+        text-align: center;  
+    }
+    .o-nama-grid{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-auto-rows: minmax(auto,auto);
+        grid-gap: 0;
+        @include max-breakpoint(xs){
+            padding-top: 40px;
+        }
+    }
+    .o-nama-text{
+        grid-column: 2/12;
+        @include max-breakpoint(sm){
+            grid-column: 2/12;
+        }
+        h5{
+            font-size: 30px;
+            font-weight: 300;
+            text-transform: uppercase;
+            margin-bottom: 45px;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 300;
+            margin-bottom: 35px;
+            color: #333;
+            &:last-child{
+                color: $primary;
+                margin-bottom: 45px;
+            }
+        }
+        img{
+            margin-bottom: 35px;
+        }
+    }
+}
