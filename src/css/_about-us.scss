@@ -3,10 +3,7 @@
         text-align: center;  
     }
     .o-nama-grid{
-        display: grid;
-        grid-template-columns: repeat(12,1fr);
-        grid-auto-rows: minmax(auto,auto);
-        grid-gap: 0;
+
         @include max-breakpoint(xs){
             padding-top: 40px;
         }
@@ -15,34 +12,35 @@
         color: $primary;
         font-size: 20px;
         font-weight: 300;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
     .o-nama-text{
-        grid-column: 2/12;
-        @include max-breakpoint(sm){
-            grid-column: 2/12;
+        padding: 0 100px;
+        @include max-breakpoint(xs){
+            padding: 0 40px;
         }
         h5{
-            font-size: 30px;
+            font-size: 26px;
             font-weight: 300;
             text-transform: uppercase;
-            margin-bottom: 45px;
+            margin-bottom: 20px;
+            color: #212529;
         }
         p{
             font-size: 14px;
             font-weight: 300;
-            margin-bottom: 30px;
-            color: #333;
+            margin-bottom: 20px;
+            color: #868e96;
             &.quality{
                 margin-bottom: 20px;
             }
             &:last-child{
-                color: $primary;
+                // color: $primary;
                 margin-bottom: 45px;
             }
         }
         img{
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
     }
 }

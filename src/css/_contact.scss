@@ -4,7 +4,7 @@
     color: $primary;
     font-size: 30px;
     font-weight: 300;
-
+    padding: 0 15px;
     @include max-breakpoint(xs){
       margin-top: 30px;
       margin-bottom: 30px;
@@ -12,8 +12,7 @@
   }
 
   .form-padding{
-    padding-right: 90px;
-    padding-left: 90px;
+    padding: 0 30px;
 
     @include max-breakpoint(lg){
       padding-right: 0;
@@ -23,7 +22,7 @@
     .vertical-center {
       display: flex;
       align-items: center;
-
+      padding-left: 0;
       @include max-breakpoint(md){
         padding-left: 15px;
         padding-right: 15px;
@@ -39,10 +38,11 @@
       padding-left: 0;
 
       li{
-        padding-left: 20px;
+        padding-left: 25px;
         position: relative;
         margin-bottom: 10px;
-
+        font-size: 14px;
+        color: #868e96;
         svg{
           position: absolute;
           left: 0;
@@ -51,7 +51,7 @@
         }
 
         a{
-          color: black;
+          color: #868e96;
         }
       }
     }
@@ -70,6 +70,8 @@
 
       label{
         width: 100%;
+        font-size: 14px;
+        color: #868e96;
       }
 
       textarea{
@@ -77,6 +79,7 @@
         border: 1px solid $form-color;
         margin-top: 25px;
         min-height: 170px;
+        font-size: 14px;
       }
 
       input{
@@ -102,3 +105,4 @@
     }
   }
 }
+
