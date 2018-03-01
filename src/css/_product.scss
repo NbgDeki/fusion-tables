@@ -63,29 +63,45 @@
   }
 
   .description{
-    padding: 40px 40px 10px 90px;
+    // padding: 40px 40px 10px 90px;
     position: relative;
     @include max-breakpoint(sm){
-      padding-left: 40px;
+      padding: 0 10px;
     }
 .description-row{
   display: flex;
   justify-content: center;
-  .col-lg-11{
-    border-left: 2px solid $primary;
-    padding: 0 50px;
+  .naslov-sadrzaj{
+    margin-top: 30px;
+    padding: 0;
+    @include max-breakpoint(md){
+      padding: 0 15px;
+    }
+  }
+  .sadrzaj{
+    padding: 0 70px;
     position: relative;
+    @include max-breakpoint(md){
+      padding: 0 85px;
+    }
+    @include max-breakpoint(sm){
+      padding: 0 15px;
+    }
     @include  max-breakpoint(xs){
       padding: 0 15px;
-      border-left: none;
     }
   }
   .soc{
-    padding: 0 100px;
+    padding: 0 70px;
     display: flex;
     justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 30px;
     @include max-breakpoint(md){
-      padding: 0 52px;
+      padding: 0 85px;
+    }
+    @include max-breakpoint(md){
+      padding-left: 15px;
     }
     @include max-breakpoint(xs){
       padding: 0;
@@ -95,7 +111,7 @@
       font-weight: 300;
       color: $letters-color;
       font-size: 26px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
 
       @include max-breakpoint(sm){
         margin-bottom: 20px;
@@ -117,7 +133,7 @@
     .social{
       display: flex;
       align-items: center;
-      margin: 30px 0 30px 0;
+      // margin: 15px 0 30px 0;
       color: $letters-color;
       h6{
         margin-bottom: 0;
@@ -146,12 +162,12 @@
       position: absolute;
       top: 0;
       left: 0;
-      transform: translate(-60px, 0);
-
-      // @include max-breakpoint(md){
-      //   transform: translate(0, 0);
-      //   left: 15px;
-      // }
+      img{
+        width: 50px;
+      }
+      @include max-breakpoint(md){
+        left: 15px;
+      }
 
       @include max-breakpoint(sm){
         display: none;
@@ -213,7 +229,7 @@
     position: absolute;
     top: 42%;
     width: 100%;
-    padding: 0 40px 0 40px;
+    padding: 0 50px 0 50px;
     z-index: 2;
 
     @include max-breakpoint(sm){
@@ -227,7 +243,7 @@
     .blue-left-arrow{
       display: block;
       cursor: pointer;
-      width: 70px;
+      width: 50px;
       height: auto;
       position: absolute;
       left: 0;
@@ -246,7 +262,7 @@
     .blue-right-arrow{
       display: block;
       cursor: pointer;
-      width: 70px;
+      width: 50px;
       height: auto;
       position: absolute;
       right: 0;
@@ -273,6 +289,6 @@
   }
   @include max-breakpoint(sm){
     display: flex;
-    margin: 30px 0;
+    // margin: 30px 0;
   }
 }
