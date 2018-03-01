@@ -1,21 +1,28 @@
 #product-page{
   box-sizing: border-box;
-
-  .left-column{
-    width: 75%;
-
-    @include max-breakpoint(xxl){
-      width: 100%;
+  .product{
+    display: flex;
+    justify-content: center;
+    @include max-breakpoint(md){
+      padding: 0 15px;
+    }
+    .left-column{
+      // width: 75%;
+  
+      @include max-breakpoint(xxl){
+        width: 100%;
+      }
+    }
+  
+    .right-column{
+      // width: 25%;
+  
+      @include max-breakpoint(xxl){
+        width: 100%;
+      }
     }
   }
-
-  .right-column{
-    width: 25%;
-
-    @include max-breakpoint(xxl){
-      width: 100%;
-    }
-  }
+  
 
   .img-fluid2{
     width: 100%;
@@ -24,19 +31,19 @@
 
   .text-holder{
     display: block;
-    width: calc(100% + 50px);
+    // width: calc(100% + 50px);
     background-color: $primary;
     opacity: 0.8;
-    margin-top: 40px;
-    padding: 50px;
-    transform: translate(-40px, 0);
+    // margin-top: 40px;
+    padding: 63px 50px;
+    // transform: translate(-40px, 0);
 
-    @include max-breakpoint(xxl){
-      transform: translate(0, 0);
-      margin-top: -40px;
-      margin-left: 40px;
-      width: calc(100% - 80px);
-    }
+    // @include max-breakpoint(xxl){
+    //   transform: translate(0, 0);
+    //   margin-top: -40px;
+    //   margin-left: 40px;
+    //   width: calc(100% - 80px);
+    // }
 
     p{
       color: white;
@@ -56,17 +63,38 @@
   }
 
   .description{
-    padding: 40px 40px 40px 90px;
+    padding: 40px 40px 10px 90px;
     position: relative;
-
     @include max-breakpoint(sm){
       padding-left: 40px;
     }
-
+.description-row{
+  display: flex;
+  justify-content: center;
+  .col-lg-11{
+    border-left: 2px solid $primary;
+    padding: 0 50px;
+    position: relative;
+    @include  max-breakpoint(xs){
+      padding: 0 15px;
+      border-left: none;
+    }
+  }
+  .soc{
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    @include max-breakpoint(md){
+      padding: 0 52px;
+    }
+    @include max-breakpoint(xs){
+      padding: 0;
+    }
+  }
     h3{
       font-weight: 300;
       color: $letters-color;
-      font-size: 30px;
+      font-size: 26px;
       margin-bottom: 40px;
 
       @include max-breakpoint(sm){
@@ -87,34 +115,43 @@
     }
 
     .social{
-      display: block;
+      display: flex;
+      align-items: center;
       margin: 30px 0 30px 0;
+      color: $letters-color;
+      h6{
+        margin-bottom: 0;
+      }
+      img{
+        // width: 30px;
+      }
+      @include max-breakpoint(sm){
+        
+      }
+      a{
+        padding-left: 15px;
+      }
     }
 
     .download2{
-      position: absolute;
-      right: 0;
-      top: 0;
       display: none;
 
       @include max-breakpoint(sm){
-        position: relative;
-        display: block;
-        margin-bottom: 20px;
+        display: inline-block;
       }
     }
 
     .pdf{
       display: block;
       position: absolute;
-      top: 120px;
-      left: 50px;
-      transform: translate(-40px, 0);
+      top: 0;
+      left: 0;
+      transform: translate(-60px, 0);
 
-      @include max-breakpoint(md){
-        transform: translate(0, 0);
-        left: 15px;
-      }
+      // @include max-breakpoint(md){
+      //   transform: translate(0, 0);
+      //   left: 15px;
+      // }
 
       @include max-breakpoint(sm){
         display: none;
@@ -127,9 +164,11 @@
 
         .download{
           position: absolute;
-          top: 0;
-          left: 0;
-
+          top: -9px;
+          left: 65px;
+          @include max-breakpoint(xl){
+            left: 62px;
+          }
           @include max-breakpoint(md){
             position: relative;
             left: auto;
@@ -147,11 +186,12 @@
 
     }
   }
+}
 
   .product-slider{
     padding-left: 90px;
     padding-right: 90px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
     @include max-breakpoint(xs){
       padding-left: 50px;
@@ -221,5 +261,18 @@
         right: -20px;
       }
     }
+  }
+}
+
+.pdf2{
+  display: none;
+  img{
+    @include max-breakpoint(sm){
+      width: 28px;
+    }
+  }
+  @include max-breakpoint(sm){
+    display: flex;
+    margin: 30px 0;
   }
 }

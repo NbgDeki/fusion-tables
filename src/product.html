@@ -182,16 +182,16 @@
 
             <section id="product-page">
                 <div class="container">
-                    <div class="row">
-                        <div class="left-column">
+                    <div class="row no-gutters product">
+                        <div class="left-column col-lg-10 col-xl-6">
                             <img class="img-fluid2" src=<%= require("./img/beli-sto.jpg") %> alt="beli sto" />
                         </div>
-                        <div class="right-column">
+                        <div class="right-column col-lg-10 col-xl-4">
                             <div class="text-holder">
-                                <p><span>Spoljne dimenzije stola</span>: 2.30 m x 1.34 m ; visina : 0.75 m (52.8” x 90.6”; visina : 29.5”)</p>
-                                <p><span>Igrački deo</span>: 1.92 m x 0.96 m (37.8” x 75.6”)</p>
-                                <p>Optimalne dimenzije prostorije *4.90 m x 3.95 m (192” x 154”) (*) sa standardnim & Pro-Cup Aramith ompletom aksesoara</p>
-                                <p>Minimalne dimenzije prostorije* 4.38 m x 3.42 m (171” x 134”) (*) sa premijum Aramith kompletom aksesoara</p>
+                                <p><span>Spoljne dimenzije stola</span>: 2.30 m x 1.34 m ; visina : 0.75 m</p>
+                                <p><span>Igrački deo</span>: 1.92 m x 0.96 m</p>
+                                <p>Optimalne dimenzije prostorije *4.90 m x 3.95 m (*) sa standardnim & Pro-Cup Aramith ompletom aksesoara</p>
+                                <p>Minimalne dimenzije prostorije* 4.38 m x 3.42 m (*) sa premijum Aramith kompletom aksesoara</p>
                                 <p><span>Boja metalnog rama</span>: RAL9003 Bela / Sjaj: 30% (saten)</p>
                             </div>
                         </div>
@@ -199,16 +199,20 @@
                 </div>
 
                 <div class="container description">
-                    <div class="row">
-                        <div class="pdf">
-                            <div class="relative">
+                    <div class="row no-gutters description-row">
+                        <!-- <div class="pdf"> -->
+                            <!-- <div class="relative">
                                 <a href="#"><img src=<%= require("./img/pdf-icon.jpg") %> alt="download" class="download" /></a>
                                 <img src=<%= require("./img/pdf-line.jpg") %> alt="pdf line" class="line" />
-                            </div>
+                            </div> -->
+                        <!-- </div> -->
+                        <div class="col-lg-12" style="padding: 0 15px;">
+                            <h3>BELI STO - Opis proizvoda </h3>
                         </div>
-                        <div class="col-sm-12">
-                            <h3>Opis proizvoda </h3>
-                            <a href="#"><img src=<%= require("./img/pdf-icon.jpg") %> alt="download" class="download2" /></a>
+                        <div class="col-lg-11">
+                            <div class="pdf">
+                                <a href="#" data-toggle="tooltip" title="Skini pdf"><img src=<%= require("./img/pdf-icon.jpg") %> alt="download" class="download" /></a>
+                            </div>
                             <h5>Elegantni evropski dizajn</h5>
                             <p>
                                 Elegantni dizajn Fusiontable stolova koristi ridigni belo obojeni čelični ram, u koji je smeštena sva snaga i stabilnost, koje su neophodne za držanje jedne igračke
@@ -234,12 +238,19 @@
                                 kako biste postigli optimalnu visinu za partiju bilijara. Ovaj sistem ne zahteva održavanje i ima osobine automatskog zaključavanja i
                                 nivelisanja za koje se čeka patent, a pruža vam maksimalnu.
                             </p>
-                            <div class="social">Podeli: <a href="#"><img src=<%= require("./img/social-icons.jpg") %> alt="social" /></a></div>
+                           
+                        </div>
+                        <div class="col-lg-12 soc">
+                            <div class="social">Podeli<a href="#"><img src=<%= require("./img/social-icons.jpg") %> alt="social" /></a></div>
+                            <div class="pdf2">
+                                    <a href="#" data-toggle="tooltip" title="Skini pdf"><img src=<%= require("./img/pdf-icon.jpg") %> alt="download" class="download2" /></a>
+                            </div>
                         </div>
                     </div>
                 </div><!-- .desctiption -->
                 <div class="container" style="position: relative">
-                    <div class="row">
+                    <div class="row slider-row no-gutters" style="justify-content: center;">
+                        <div class="col-lg-10">
                         <div id="arrow-wrapper">
                             <div style="position: relative">
                                 <img src=<%= require("./img/blue-left-arrow.jpg") %> alt="beli sto" class="blue-left-arrow" />
@@ -257,6 +268,8 @@
                                 <img src=<%= require("./img/product-slider.jpg") %> alt="beli sto" />
                             </div>
                         </div>
+                        
+                    </div>
                     </div>
                 </div>
             </section>
