@@ -7,13 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fusion tables</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
-</head>
+<link href="style.css" rel="stylesheet"></head>
 
 <body>
         <div id="back-to-top"></div> 
             
         
-    <%= require('html-loader!./inc/mobile-side-menu.html') %>
+    <nav id=side-menu> <div id=accordion> <div class=card> <div class=card-header id=heading1> <h5 class=mb-0> <a href=#>home</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading2> <h5 class=mb-0> <a href=#>o nama</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading3> <h5 class=mb-0> <a href=#>kolekcije</a> <div class="plusic collapsed" data-toggle=collapse data-target=#collapse2 aria-expanded=false aria-controls=collapse2> <i class="fas fa-plus"></i> </div> </h5> </div> <div id=collapse2 class=collapse aria-labelledby=heading2 data-parent=#accordion> <div class=card-body> <p> <a href=#>stolovi i sidebars</a> </p> <p> <a href=#>aksesoari</a> </p> <p> <a href=#>stolice i klupe</a> </p> <p> <a href=#>rasveta</a> </p> </div> </div> </div> <div class=card> <div class=card-header id=heading4> <h5 class=mb-0> <a href=#>dizajn</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading5> <h5 class=mb-0> <a href=#>iskustva</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading6> <h5 class=mb-0> <a href=#>kvalitet</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading-desktop-7> <h5 class=mb-0> <a href=#>galerija</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading-desktop-7> <h5 class=mb-0> <a href=#>press</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading-desktop-7> <h5 class=mb-0> <a href=#>kontakt</a> </h5> </div> </div> </div> </nav>
 
     <div id="site-content">
 
@@ -30,7 +30,7 @@
                     
                     <div id="desktop-side-menu">
                         <div class="logo">
-                                <img src=<%= require("./img/logo.png") %> alt="fusion tables" />
+                                <img src=img/logo.png alt="fusion tables" />
                         </div>
                         <div id="accordion2">
                             <div class="card">
@@ -157,7 +157,7 @@
 
             <section>
                 <div class="container-fluid hero-image">
-                    <!-- <img src=<%= require("./img/collections/hero/collections-hero.jpg") %> alt="hero" /> -->
+                    <!-- <img src=img/collections-hero.jpg alt="hero" /> -->
                 </div>
             </section>
 
@@ -179,7 +179,7 @@
                 <div class="container">
                     <div class="row no-gutters product">
                         <div class="left-column col-lg-10 col-xl-6">
-                            <img class="img-fluid2" src=<%= require("./img/beli-sto.jpg") %> alt="beli sto" />
+                            <img class="img-fluid2" src=img/beli-sto.jpg alt="beli sto" />
                         </div>
                         <div class="right-column col-lg-10 col-xl-4">
                             <div class="text-holder">
@@ -197,7 +197,7 @@
                     <div class="row no-gutters description-row">
                         <!-- <div class="pdf"> -->
                             <!-- <div class="relative">
-                                <a href="#"><img src=<%= require("./img/pdf-icon.jpg") %> alt="download" class="download" /></a>
+                                <a href="#"><img src=img/pdf-icon.jpg alt="download" class="download" /></a>
                             </div> -->
                         <!-- </div> -->
                         <div class="col-lg-10 naslov-sadrzaj">
@@ -205,7 +205,7 @@
                         </div>
                         <div class="col-lg-10 sadrzaj">
                             <div class="pdf">
-                                <a href="#" data-toggle="tooltip" title="Skini pdf"><img src=<%= require("./img/pdf-icon.jpg") %> alt="download" class="download" /></a>
+                                <a href="#" data-toggle="tooltip" title="Skini pdf"><img src=img/pdf-icon.jpg alt="download" class="download" /></a>
                             </div>
                             <h5>Elegantni evropski dizajn</h5>
                             <p>
@@ -235,9 +235,9 @@
                            
                         </div>
                         <div class="col-lg-10 soc">
-                            <div class="social">Podeli<a href="#"><img src=<%= require("./img/social-icons.jpg") %> alt="social" /></a></div>
+                            <div class="social">Podeli<a href="#"><img src=img/social-icons.jpg alt="social" /></a></div>
                             <div class="pdf2">
-                                    <a href="#" data-toggle="tooltip" title="Skini pdf"><img src=<%= require("./img/pdf-icon.jpg") %> alt="download" class="download2" /></a>
+                                    <a href="#" data-toggle="tooltip" title="Skini pdf"><img src=img/pdf-icon.jpg alt="download" class="download2" /></a>
                             </div>
                         </div>
                     </div>
@@ -247,19 +247,19 @@
                         <div class="col-lg-10">
                         <div id="arrow-wrapper">
                             <div style="position: relative">
-                                <img src=<%= require("./img/blue-left-arrow.jpg") %> alt="beli sto" class="blue-left-arrow" />
-                                <img src=<%= require("./img/blue-right-arrow.jpg") %> alt="beli sto" class="blue-right-arrow" />
+                                <img src=img/blue-left-arrow.jpg alt="beli sto" class="blue-left-arrow" />
+                                <img src=img/blue-right-arrow.jpg alt="beli sto" class="blue-right-arrow" />
                             </div>
                         </div>
                         <div class="owl-carousel product-slider owl-theme col-md-12">
                             <div class="slide">
-                                <img src=<%= require("./img/product-slider.jpg") %> alt="beli sto" />
+                                <img src=img/product-slider.jpg alt="beli sto" />
                             </div>
                             <div class="slide">
-                                <img src=<%= require("./img/product-slider.jpg") %> alt="beli sto" />
+                                <img src=img/product-slider.jpg alt="beli sto" />
                             </div>
                             <div class="slide">
-                                <img src=<%= require("./img/product-slider.jpg") %> alt="beli sto" />
+                                <img src=img/product-slider.jpg alt="beli sto" />
                             </div>
                         </div>
                         
@@ -295,12 +295,12 @@
             </section><!-- .container -->
         </div>
 
-            <%= require('html-loader!./inc/footer.html') %>
+            <section> <footer> <div class=full2> <div class="container made-by"> <div class=container> <div class=row> <div class="col-sm-12 col-md-8 col-lg-8 copy"> <p class=copyright>© Copyright 2018. All Rights Reserved, MiniStudio Publishing Group.</p> </div> <div class="col-sm-12 col-md-4 col-lg-4 copy-social"> <div class=social-icons> <a href=https://www.facebook.com/fusiontablesserbia/ target=_blank><i class="fab fa-facebook"></i></a> <a href=https://www.instagram.com/fusiontables/ target=_blank><i class="fab fa-instagram"></i></a> </div> </div> </div> </div> </div> </div> </footer> </section>
 
         </div>
 
 
     </div>
-</body>
+<script type="text/javascript" src="app.bundle.js"></script></body>
 
 </html>

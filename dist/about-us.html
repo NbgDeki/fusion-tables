@@ -7,15 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fusion tables</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
-</head>
+<link href="style.css" rel="stylesheet"></head>
 
 <body>
-        <div id="back-to-top"></div> 
-            
-        
-    <%= require('html-loader!./inc/mobile-side-menu.html') %>
+    <nav id=side-menu> <div id=accordion> <div class=card> <div class=card-header id=heading1> <h5 class=mb-0> <a href=#>home</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading2> <h5 class=mb-0> <a href=#>o nama</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading3> <h5 class=mb-0> <a href=#>kolekcije</a> <div class="plusic collapsed" data-toggle=collapse data-target=#collapse2 aria-expanded=false aria-controls=collapse2> <i class="fas fa-plus"></i> </div> </h5> </div> <div id=collapse2 class=collapse aria-labelledby=heading2 data-parent=#accordion> <div class=card-body> <p> <a href=#>stolovi i sidebars</a> </p> <p> <a href=#>aksesoari</a> </p> <p> <a href=#>stolice i klupe</a> </p> <p> <a href=#>rasveta</a> </p> </div> </div> </div> <div class=card> <div class=card-header id=heading4> <h5 class=mb-0> <a href=#>dizajn</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading5> <h5 class=mb-0> <a href=#>iskustva</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading6> <h5 class=mb-0> <a href=#>kvalitet</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading-desktop-7> <h5 class=mb-0> <a href=#>galerija</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading-desktop-7> <h5 class=mb-0> <a href=#>press</a> </h5> </div> </div> <div class=card> <div class=card-header id=heading-desktop-7> <h5 class=mb-0> <a href=#>kontakt</a> </h5> </div> </div> </div> </nav>
 
     <div id="site-content">
+
+        <!-- <div class="back-logo">
+            <a href="#"><img src=img/logo.png alt="fusion tables" /></a>
+            <div class="trigger2">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div> -->
+
 
         <div id="homepage">
 
@@ -24,13 +29,13 @@
                     
                         </div>
                         <div class="right-box">
-                            <h2>beli sto</h2>
+                            <h2>o nama</h2>
                         </div>
                     </div>
                     
                     <div id="desktop-side-menu">
                         <div class="logo">
-                                <img src=<%= require("./img/logo.png") %> alt="fusion tables" />
+                                <img src=img/logo.png alt="fusion tables" />
                         </div>
                         <div id="accordion2">
                             <div class="card">
@@ -129,19 +134,15 @@
                             <a href="https://www.facebook.com/fusiontablesserbia/" target="_blank">
                                 <i class="fab fa-facebook"></i>
                             </a>
-                            
                             <!-- <a href="#">
                                 <i class="fab fa-linkedin"></i>
                             </a> -->
-                           
                             <a href="https://www.instagram.com/fusiontables/" target="_blank">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <!--
-                            <a href="#">
+                            <!-- <a href="#">
                                 <i class="fab fa-pinterest-square"></i>
-                            </a>
-                            -->
+                            </a> -->
                         </div>
                         <div class="blue">
                     
@@ -157,113 +158,35 @@
 
             <section>
                 <div class="container-fluid hero-image">
-                    <!-- <img src=<%= require("./img/collections/hero/collections-hero.jpg") %> alt="hero" /> -->
+                    <!-- <img src=img/collections-hero.jpg alt="hero" /> -->
                 </div>
             </section>
 
             <section>
-                <div class="container">
+                <div class="container" style="padding: 0 15px;">
                     <div class="row">
                         <div class="col-lg-12">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">home</a></li>
-                                <li class="breadcrumb-item"><a href="#">kolekcije</a></li>
-                                <li class="breadcrumb-item active"><a href="">beli sto</a></li>
-                            </ol>
+                                    <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">home</a></li>
+                                    <li class="breadcrumb-item active"><a href="#">o nama</a></li>
+                                </ol>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="product-page">
-                <div class="container">
-                    <div class="row no-gutters product">
-                        <div class="left-column col-lg-10 col-xl-6">
-                            <img class="img-fluid2" src=<%= require("./img/beli-sto.jpg") %> alt="beli sto" />
+            <section>
+                <div class="container about-us">
+                    <div class="row o-nama-grid">
+                        <div class="o-nama-text col-md-12">
+                            <h5>o nama</h5>
+                            <p>For more than 85 years, the Aramith group has developed and manufactured products that bring value to the consumer. By focusing on top quality products since the creation of our company in 1923, we have constantly adapted our range to changes in our customers' lifestyles Our desire to listen, look, analyse and anticipate has enabled us to be trendsetting at many times..</p>
+                            <a href="#"><img class="img-fluid" src=img/about-us-1.jpg alt="about-us-1" /></a>
+                            <p>We do not take success for granted because we believe that customers are entitled to be demanding. We specialise in the field of lifestyle and sharing pleasure in the comfort of your home, with family or friends from all generations. The Fusion table offers a completely new concept for the dining room. A unique product which meets a need to join together. With its surprising design concept, the Fusion table adds a new dimension to entertainment at home. Rather than an external sign of wealth, it offers its know-how to help you to relax and unwind at home. At a time when most people spend hours alone in front of their computer, going home and having fun with friends offers balance and meaning to life. Our team took great pleasure in designing the Fusion table. It hopes that you will have just as much pleasure using it.</p>
+                            <a href="#"><img class="img-fluid" src=img/about-us-2.jpg alt="about-us-2" /></a>
+                            <p>Saluc sa - 2 Rue de Tournai - 7604 Callenelle - Belgium<br>
+                              <a href="tel:+3269778211">+32 69 77 82 11</a> - <a href="mailto:info@fusiontables.com">info@fusiontables.com</a></p>
                         </div>
-                        <div class="right-column col-lg-10 col-xl-4">
-                            <div class="text-holder">
-                                <p><span>Spoljne dimenzije stola</span>: 2.30 m x 1.34 m ; visina : 0.75 m</p>
-                                <p><span>Igrački deo</span>: 1.92 m x 0.96 m</p>
-                                <p>Optimalne dimenzije prostorije *4.90 m x 3.95 m (*) sa standardnim & Pro-Cup Aramith ompletom aksesoara</p>
-                                <p>Minimalne dimenzije prostorije* 4.38 m x 3.42 m (*) sa premijum Aramith kompletom aksesoara</p>
-                                <p><span>Boja metalnog rama</span>: RAL9003 Bela / Sjaj: 30% (saten)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container description">
-                    <div class="row no-gutters description-row">
-                        <!-- <div class="pdf"> -->
-                            <!-- <div class="relative">
-                                <a href="#"><img src=<%= require("./img/pdf-icon.jpg") %> alt="download" class="download" /></a>
-                            </div> -->
-                        <!-- </div> -->
-                        <div class="col-lg-10 naslov-sadrzaj">
-                            <h3>BELI STO - Opis proizvoda </h3>
-                        </div>
-                        <div class="col-lg-10 sadrzaj">
-                            <div class="pdf">
-                                <a href="#" data-toggle="tooltip" title="Skini pdf"><img src=<%= require("./img/pdf-icon.jpg") %> alt="download" class="download" /></a>
-                            </div>
-                            <h5>Elegantni evropski dizajn</h5>
-                            <p>
-                                Elegantni dizajn Fusiontable stolova koristi ridigni belo obojeni čelični ram, u koji je smeštena sva snaga i stabilnost, koje su neophodne za držanje jedne igračke
-                                površine u mestu. Svi bilijarski aksesoari će biti smešteni na stolu za bilijar, a niko neće znati za njih, sve dok im vi to ne otkrijete.
-                            </p>
-
-                            <h5>Dizajn džepova koji je u procesu patentiranja</h5>
-                            <p>
-                                Kako bi uspešno sve smestili u uzanu gornju površinu Fusiontables modela, dizajneri ovog brenda kreirali su jedinstveno rešenje za džepove. Upotrebom hi-tech
-                                najlonske tkanine, ovi džepovi za koje se čeka patent se rašire kada su u njima kugle, da bi se nakon igre vratili u svoje prvobitno stanje.
-                            </p>
-
-                            <h5>Spremni za igru u svako doba</h5>
-                            <p>
-                                Jedinstvena dizajnerska rešenja ovih stolova, ostavljaju dovoljno prostora za sve aksesoare ispod njegove gornje površine. Praznina između površina –
-                                bilijarske i trpezarijske, idealna je za odlaganje bilijarskih štapova i svih ostalih neophodnosti. Unikatni džepovi za kugle za koje se čeka patent su
-                                prostor u kom se kugle nalaze kada ne igrate bilijar, a nikada se neće previše rastegnuti.
-                            </p>
-
-                            <h5>Easy-Lift sistem za koji se čeka patent</h5>
-                            <p>
-                                Opcioni Easy-Lift sistem sa oprugama dozvoljava vam da sa lakoćom izdignete svoj sto za dodatnih 75 mm na standardnu visinu trpezarijskog stola od 75 cm,
-                                kako biste postigli optimalnu visinu za partiju bilijara. Ovaj sistem ne zahteva održavanje i ima osobine automatskog zaključavanja i
-                                nivelisanja za koje se čeka patent, a pruža vam maksimalnu.
-                            </p>
-                           
-                        </div>
-                        <div class="col-lg-10 soc">
-                            <div class="social">Podeli<a href="#"><img src=<%= require("./img/social-icons.jpg") %> alt="social" /></a></div>
-                            <div class="pdf2">
-                                    <a href="#" data-toggle="tooltip" title="Skini pdf"><img src=<%= require("./img/pdf-icon.jpg") %> alt="download" class="download2" /></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- .desctiption -->
-                <div class="container" style="position: relative">
-                    <div class="row slider-row no-gutters" style="justify-content: center;">
-                        <div class="col-lg-10">
-                        <div id="arrow-wrapper">
-                            <div style="position: relative">
-                                <img src=<%= require("./img/blue-left-arrow.jpg") %> alt="beli sto" class="blue-left-arrow" />
-                                <img src=<%= require("./img/blue-right-arrow.jpg") %> alt="beli sto" class="blue-right-arrow" />
-                            </div>
-                        </div>
-                        <div class="owl-carousel product-slider owl-theme col-md-12">
-                            <div class="slide">
-                                <img src=<%= require("./img/product-slider.jpg") %> alt="beli sto" />
-                            </div>
-                            <div class="slide">
-                                <img src=<%= require("./img/product-slider.jpg") %> alt="beli sto" />
-                            </div>
-                            <div class="slide">
-                                <img src=<%= require("./img/product-slider.jpg") %> alt="beli sto" />
-                            </div>
-                        </div>
-                        
-                    </div>
                     </div>
                 </div>
             </section>
@@ -287,20 +210,19 @@
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-4 insta">
                         <p class="title"><a href="#">Instagram feed</a></p>
-                        <!-- LightWidget WIDGET -->
-                        <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/4379931830f0549a9833d6dcac9dcbcc.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+                        <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/4379931830f0549a9833d6dcac9dcbcc.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
                         <p>Pratite nas: <a href="#">@fusiontablesrs</a></p>
                     </div>
                 </div>
             </section><!-- .container -->
         </div>
 
-            <%= require('html-loader!./inc/footer.html') %>
+        <section> <footer> <div class=full2> <div class="container made-by"> <div class=container> <div class=row> <div class="col-sm-12 col-md-8 col-lg-8 copy"> <p class=copyright>© Copyright 2018. All Rights Reserved, MiniStudio Publishing Group.</p> </div> <div class="col-sm-12 col-md-4 col-lg-4 copy-social"> <div class=social-icons> <a href=https://www.facebook.com/fusiontablesserbia/ target=_blank><i class="fab fa-facebook"></i></a> <a href=https://www.instagram.com/fusiontables/ target=_blank><i class="fab fa-instagram"></i></a> </div> </div> </div> </div> </div> </div> </footer> </section>
 
         </div>
 
 
     </div>
-</body>
+<script type="text/javascript" src="app.bundle.js"></script></body>
 
 </html>
