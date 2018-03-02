@@ -8,16 +8,6 @@
     }
 }
 
-.hero-contact-image{
-    background: url('../img/hero-contact.jpg') no-repeat center;
-    background-size: cover;
-    height: 300px;
-    width: 100%;
-    @include max-breakpoint(xs){
-        display: none;
-    }
-}
-
 .collections{
     padding: 30px 15px;
     padding-top: 0;
@@ -72,14 +62,15 @@
             justify-content: center;
             align-items: center;
             background-color: $primary;
-            height: 45px;
+            // height: 45px;
             transition: all .2s ease;
             h3{
                 margin-bottom: 0;
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 500;
                 text-transform: uppercase;
                 color: $white;
+                padding: 1em;
             }
         }
     }
@@ -89,6 +80,9 @@
     margin-bottom: 0;
     background-color: $white;
     padding-left: 0;
+    @include max-breakpoint(xs){
+        padding-top: 70px;
+    }
     li.breadcrumb-item{
             a{
                 color: $primary;
@@ -99,5 +93,20 @@
                 color: $letters-color;
                 pointer-events: none;
             }
+            &::before{
+                font-size: 10px;
+            }
+    }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    .collections .collections-grid{
+        display: flex;
+        @include max-breakpoint(sm){
+            justify-content: center;
+        }
+    }
+    .collections .collections-grid .collections-grid-item{
+        margin: 10px;
     }
 }

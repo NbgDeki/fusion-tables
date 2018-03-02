@@ -38,20 +38,11 @@
     }
 
     .owl-nav{
-      display: block;
+      display: none;
       width: 100%;
       position: absolute;
       top: 50%;
       transform: translate(0 , -50%);
-
-      // @include min-breakpoint(lg) {
-      //   top: 38%;
-      // }
-
-      // @include min-breakpoint(md) {
-      //   top: 43%;
-      // }
-
       @include max-breakpoint(xs){
         display: none;
       }
@@ -96,7 +87,7 @@
         display: block;
         width: 190px;
         height: auto;
-        margin-bottom: 30px;
+        margin-bottom: 17px;
         @include max-breakpoint(xs){
           display: none;
         }
@@ -174,7 +165,7 @@
         font-size: 16px;
         color: $primary;
         text-transform: uppercase;
-        margin-bottom: 45px;
+        margin-bottom: 20px;
         @include max-breakpoint(xs){
           margin-bottom: 20px;
         }
@@ -212,7 +203,7 @@
 
         &.title{
           text-align: center;
-          margin-bottom: 30px;
+          margin-bottom: 20px;
           font-weight: 500;
           font-size: 16px;
         }
