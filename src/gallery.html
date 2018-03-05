@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fusion tables</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+</head>
+
+<body>
+    <div id="back-to-top">
+        
+    </div>
+    <!-- <a href="#" id="back-to-top" title="Back to top">&uarr;</a> -->
+    <%= require('html-loader!./inc/mobile-side-menu.html') %>
+
+    <div id="site-content">
+        <div id="homepage">
+
+            <%= require('html-loader!./inc/desktop-side-menu.html') %>
+
+            <div class="container-fluid fluid-nav">
+                <div class="container fluid-nav-cont">
+                    <i class="fas fa-bars" id="trigger"></i>
+                    <div class="logo-wrapper">
+                        <img src="./img/logo.png" alt="fusion table" class="logo" />
+                    </div>
+                </div>
+            </div><!-- .container-fluid -->
+
+            <div class="container-fluid">
+                <div class="image-box">
+                    <img src=<%= require("./img/slider-1.jpg") %> alt="slider 1" />
+                </div>
+            </div><!-- .container-fluid -->
+
+            <section><!-- pagination -->
+                <div class="container" style="padding: 0 15px;">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">home</a></li>
+                                <li class="breadcrumb-item active"><a href="#">galerija</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- ./pagination -->
+
+            <!-- carousel -->
+            <div class="image-gallery owl-carousel" id="jsImageGallery">
+                <img data-thumbnail="true" src=<%= require("./img/gallery/1.jpg") %> alt="">
+                <img data-thumbnail="true" src=<%= require("./img/gallery/1.jpg") %> alt="">
+                <img data-thumbnail="true" src=<%= require("./img/gallery/1.jpg") %> alt="">
+                <img data-thumbnail="true" src=<%= require("./img/gallery/1.jpg") %> alt="">
+                <img data-thumbnail="true" src=<%= require("./img/gallery/1.jpg") %> alt="">
+            </div>
+            <!-- ./carousel -->
+
+            <div class="full3">
+                <section class="container body-content">
+                    <div class="row body-content-row">
+                        <div class="col-sm-6 col-md-4 col-lg-4 footer-logo">
+                            <img src="./img/logo.png" alt="fusion table" class="logo" />
+                            <p>
+                                Vanvremenski i elegantni, Fusion stolovi kreiraju ležernu atmosferu za večeru sa prijateljima. Nakon obroka, svoj Fusion sto možete transformisati u vrhunski sto za bilijar za samo 1 minut! Započnite svoju igru…
+                            </p>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-4 contact">
+                            <p class="title"><a href="#">Kontakt</a></p>
+                            <ul>
+                                <li><i class="fas fa-map-marker-alt"></i>Zmaja od Noćaja 12, Beograd, Srbija</li>
+                                <li><a href="mailto:support@fusiontables.rs"><i class="far fa-envelope"></i>support@fusiontables.rs</a></li>
+                                <li><i class="fas fa-phone"></i><a href="tel:+381113282710">(+381) 11 32 82 710</a> <br> <a href="tel:+391637780088">(+381) 63 778 00 88</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-4 insta">
+                            <p class="title"><a href="#">Instagram feed</a></p>
+                            <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/4379931830f0549a9833d6dcac9dcbcc.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+                            <p>Pratite nas: <a href="#">@fusiontablesrs</a></p>
+                        </div>
+                    </div>
+                </section><!-- .container -->
+            </div>
+
+            <%= require('html-loader!./inc/footer.html') %>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

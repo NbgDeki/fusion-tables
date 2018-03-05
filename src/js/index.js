@@ -29,12 +29,12 @@ $(function () {
     $(".blue-right-arrow").click(function () {
         owl.trigger('next.owl.carousel');
     });
-
+        
     $('.slajder').mouseover(function(){
-        $('.owl-nav').fadeIn(500);
+        $(this).find('.owl-nav').fadeIn(500);
     });
     $('.slajder').mouseleave(function(){
-        $('.owl-nav').fadeOut(500);
+        $(this).find('.owl-nav').fadeOut(500);
     });
 });
 

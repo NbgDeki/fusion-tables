@@ -1,0 +1,31 @@
+.image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 750px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.image-gallery {
+    position: relative;
+}
+
+.carousel-controls {
+    position: absolute;
+    width: 50px;
+    top: 50%;
+
+    &--left {
+        left: 12px;
+        transform: translateY(-50%);
+    }
+
+    &--right {
+        right: 28px;
+        transform: translateY(-50%);
+    }
+}
