@@ -10,3 +10,7 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 .env
+
+src/img/gallery
+output.html
+gallery-images.html
