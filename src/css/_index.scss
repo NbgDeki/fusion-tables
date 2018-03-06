@@ -223,9 +223,9 @@
 }
 }
  .slajder{
-   padding-top: 60px;
+   padding: 60px 0 0;
 
     @include min-breakpoint(md){
-      padding-top: 0;
+      padding: 0;
   }
 }
