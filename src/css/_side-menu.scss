@@ -7,14 +7,9 @@ body {
 }
 
 a {
-  transition: all 0.5s;
+  transition: color 0.5s;
   text-decoration: none !important;
 }
-
-// .container-fluid,
-// .container {
-//   // padding: 0;
-// }
 
 .row {
   margin: 0;
@@ -57,11 +52,11 @@ a {
   width: 280px;
   background-color: $background;
   z-index: 999;
-  transition: all 0.5s;
+  transition: transform 0.5s;
   transform: translate(-280px, 0);
   &.active {
     transform: translate(0, 0);
-    +#site-content {
+    + #site-content {
       transform: translate(280px, 0);
     }
   }
@@ -75,7 +70,6 @@ a {
         position: relative;
         background-color: $background;
         border-radius: 0;
-        transition: all .3s ease;
         h5 {
           text-transform: uppercase;
         }
@@ -126,29 +120,30 @@ a {
   width: 80%;
   margin: 0 auto;
   margin-top: 160px;
+
   .card {
     border-radius: 0;
     border-top: none;
     border-left: none;
     border-right: none;
+
     .card-header {
       padding: 0.5rem 1.25rem;
       position: relative;
       background-color: #f9f9f9;
       border-radius: 0;
-      transition: all .3s ease;
       border: none;
+
       h5 {
         text-transform: uppercase;
-        a{
+
+        a {
           &:hover{
             color: $secondary;
           }
         }
       }
-      &:hover {
-        // opacity: .7;
-      }
+
       a {
         font-size: 14px;
         color: $letters-color;
@@ -200,7 +195,8 @@ a {
 
 
 #site-content {
-  // min-height: 2100px;
+  transition: transform 0.5s;
+
   .back-logo {
     position: absolute;
     left: 0;
@@ -223,11 +219,10 @@ a {
       cursor: pointer;
     }
   }
-  transition: all 0.5s;
+  
   .fluid-nav {
     position: fixed;
     z-index: 2;
-    transition: all 0.5s;
     background-color: $white;
     display: none;
     @include max-breakpoint(md){
@@ -286,7 +281,6 @@ a {
   height: 60px;
   flex-wrap: nowrap;
   z-index: 4;
-  transition: all .5s ease;
   opacity: 1;
   transform: translate(-305px, 0);
   -ms-transform: translate(0);
@@ -355,12 +349,9 @@ a {
   height: 100%;
   z-index: 3;
   transform: translate(-270px, 0);
-  -ms-transform: translate(0);
-  transition: all .5s ease;
   @include max-breakpoint(lg) {
     width: 270px;
     transform: translate(-270px, 0);
-    -ms-transform: translate(0);
   }
   .blue {
     width: 100%;
