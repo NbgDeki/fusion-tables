@@ -222,18 +222,23 @@ a {
   
   .fluid-nav {
     position: fixed;
-    z-index: 2;
-    background-color: $white;
     display: none;
+    padding: 0;
+    background-color: $white;
+    z-index: 2;
+
     @include max-breakpoint(md){
       display: block;
     }
   }
+  
   .fluid-nav-cont {
     display: flex;
     align-items: center;
-    height: 60px;
     justify-content: center;
+    height: 60px;
+    padding: 0;
+
     @include max-breakpoint(xs){
       justify-content: space-between;
     }
