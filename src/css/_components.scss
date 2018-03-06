@@ -1,10 +1,36 @@
+.btn {
+  font-size: 14px;
+}
+
 .ft-btn {
   border-radius: 0;
   color: #fff;
   padding: 10px 30px;
-  text-transform: uppercase;
 
   &:hover  {
     color: #fff;
+  }
+}
+
+.page-item.ft-page-item {
+  & + & {
+    margin-left: 7px;
+  }
+}
+
+.page-link.ft-page-link {
+  background-color: $primary;
+  color: white;
+  border-radius: 0 !important;
+  border: 0;
+  min-width: 36px;
+  text-align: center;
+
+  &:hover {
+    background-color: $secondary;
+  }
+
+  .active & {
+    background-color: $black;
   }
 }
