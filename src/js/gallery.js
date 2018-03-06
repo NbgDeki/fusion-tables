@@ -1,3 +1,28 @@
+const options = {
+    nav: true,
+    // rewind: true,
+    navText: [
+        _getArrow('left'), 
+        _getArrow('right')
+    ],
+    margin: 10,
+    responsive: {
+        0: {
+            items: 2
+        },
+        576: {
+            items: 4
+        },
+        992: {
+            items: 5
+        }
+    }
+};
+
+function _getArrow (dir) {
+    return `<img class="carousel-controls carousel-controls--${dir}" src="https://www.fusiontables.rs/img/blue-${dir}-arrow.jpg">`;
+}
+
 $(document).ready(function () {
     // cache dom
     const $imageGallery = $('#jsImageGallery'),
@@ -7,18 +32,7 @@ $(document).ready(function () {
     $imageGallery.on('click', _handleThumbnailClicks);
 
     // inti carousel
-    // TODO Add responsive brakepoints
-    $imageGallery.owlCarousel({
-        // autoWidth: true,
-        items: 5,
-        nav: true,
-        // rewind: true,
-        navText: [
-            '<img class="carousel-controls carousel-controls--left" src="https://www.fusiontables.rs/img/blue-left-arrow.jpg">', 
-            '<img class="carousel-controls carousel-controls--right" src="https://www.fusiontables.rs/img/blue-right-arrow.jpg">'
-        ],
-        margin: 10
-    });
+    $imageGallery.owlCarousel(options);
 
     // click handler
     function _handleThumbnailClicks (evt) {
