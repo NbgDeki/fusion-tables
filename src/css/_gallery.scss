@@ -1,3 +1,11 @@
+.gallery-page {
+    .breadcrumb {
+        @include max-breakpoint(xs) {
+            padding-top: 12px;
+        }
+    }
+}
+
 .image-box {
     display: flex;
     align-items: center;
