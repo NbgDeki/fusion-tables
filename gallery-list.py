@@ -3,7 +3,7 @@ from os import listdir
 from os.path import isfile, isdir, join
 
 def create_image (file_name):
-  return '<img data-is-thumbnail="true" src=<%= require("./img/gallery/small/{}") %> />\n'.format(file_name)
+  return '<img data-is-thumbnail="true" src="https://ministudio.rs/download/fusion-tables/small/{}" />\n'.format(file_name)
 
 try:
   path = sys.argv[1]
