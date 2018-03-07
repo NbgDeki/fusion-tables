@@ -1,0 +1,51 @@
+.gallery-page {
+    .breadcrumb {
+        @include max-breakpoint(xs) {
+            padding-top: 12px;
+        }
+    }
+}
+
+.image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 750px;
+    padding-top: 60px;
+    overflow: hidden;
+
+    @include min-breakpoint(md) {
+        padding-top: 0;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.image-gallery {
+    position: relative;
+}
+
+.carousel-controls {
+    position: absolute;
+    width: 50px;
+    top: 50%;
+    opacity: 1;
+    pointer-events: auto;
+
+    .disabled & {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &--left {
+        left: 12px;
+        transform: translateY(-50%);
+    }
+
+    &--right {
+        right: 12px;
+        transform: translateY(-50%);
+    }
+}

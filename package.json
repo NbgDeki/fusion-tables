@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack-dev-server --open",
-    "build:prod": "webpack -p"
+    "start": "webpack-dev-server --open",
+    "build:prod": "webpack -p",
+    "images:gallery": "python3 gallery-list.py ./src/img/gallery/small ./src/inc/gallery-images.html"
   },
   "repository": {
     "type": "git",
