@@ -1,8 +1,8 @@
 #site-content{
-  width: calc(100vw - 270px);
+  width: calc(100% - 270px);
   transform: translate(270px , 0);
   @include max-breakpoint(lg){
-    width: calc(100vw - 270px);
+    width: calc(100% - 270px);
     transform: translate(270px , 0);
   }
   @include max-breakpoint(md){
@@ -223,9 +223,9 @@
 }
 }
  .slajder{
-   padding-top: 60px;
+   padding: 60px 0 0;
 
     @include min-breakpoint(md){
-      padding-top: 0;
+      padding: 0;
   }
 }

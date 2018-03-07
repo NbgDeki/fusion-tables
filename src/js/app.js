@@ -2,6 +2,7 @@ import 'jquery';
 import 'bootstrap';
 import '../css/main.scss';
 require('./index');
+import './gallery';
 
 
 import fontawesome from '@fortawesome/fontawesome';
