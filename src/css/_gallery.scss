@@ -23,7 +23,7 @@
       opacity: 1;
       transition: opacity .25s;
 
-      &.loaded {
+      &.loading {
         opacity: 0;
       }
     }

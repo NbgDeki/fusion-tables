@@ -48,14 +48,12 @@ $(document).ready(function () {
     const img = document.createElement('img');
     img.src = newSrc;
 
+    $image.addClass('loading');
+    
     img.onload = function () {
-      $image.addClass('loaded');
-
-      $image.on('transitionend', evt => {
-        $image.attr('src', newSrc);
-        $image.removeClass('loaded');
-        $image.off('transitionend');
-      });
+      $image.attr('src', newSrc);
+      $image.removeClass('loading');
+      $image.off('transitionend');
     }
   }
 
