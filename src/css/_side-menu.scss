@@ -364,9 +364,7 @@ a {
     background-color: $secondary;
     position: fixed;
     bottom: 0;
-  } // @include max-breakpoint(full-hd){
-  //   transform: translate(-305px,0);
-  // }
+  }
   @include max-breakpoint(md) {
     display: none;
   }
@@ -376,9 +374,7 @@ a {
   .logo {
     margin-top: 50px;
     margin-bottom: 50px;
-    // @include max-breakpoint(lg) {
-    //   margin: 60px 0;
-    // }
+
     img {
       display: block;
       width: 230px;
