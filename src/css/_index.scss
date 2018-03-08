@@ -31,7 +31,6 @@
       .slide{
         padding: 0;
         img{
-          // object-fit: cover;
           max-height: 100vh;
         }
       }
@@ -55,13 +54,6 @@
       .owl-next{
         position: absolute;
         right: 40px;
-        // left: 50%;
-        // margin-left: 610px;
-        @include max-breakpoint(lg) {
-          // left: auto;
-          // margin-left: auto;
-          // right: 30px;
-        }
       }
     }
   }
@@ -175,8 +167,6 @@
     .insta{
       display: block;
       width: 300px;
-      // padding-left: 55px;
-      // padding-right: 55px;
       padding-top: 15px;
       @include max-breakpoint(xs){
         padding-top: 30px;

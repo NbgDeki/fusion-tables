@@ -7,7 +7,6 @@
       padding: 0 15px;
     }
     .left-column{
-      // width: 75%;
   
       @include max-breakpoint(xxl){
         width: 100%;
@@ -15,7 +14,6 @@
     }
   
     .right-column{
-      // width: 25%;
   
       @include max-breakpoint(xxl){
         width: 100%;
@@ -31,19 +29,9 @@
 
   .text-holder{
     display: block;
-    // width: calc(100% + 50px);
     background-color: $primary;
     opacity: 0.8;
-    // margin-top: 40px;
     padding: 63px 50px;
-    // transform: translate(-40px, 0);
-
-    // @include max-breakpoint(xxl){
-    //   transform: translate(0, 0);
-    //   margin-top: -40px;
-    //   margin-left: 40px;
-    //   width: calc(100% - 80px);
-    // }
 
     p{
       color: white;
@@ -63,7 +51,6 @@
   }
 
   .description{
-    // padding: 40px 40px 10px 90px;
     position: relative;
     @include max-breakpoint(sm){
       padding: 0 10px;
@@ -133,13 +120,9 @@
     .social{
       display: flex;
       align-items: center;
-      // margin: 15px 0 30px 0;
       color: $letters-color;
       h6{
         margin-bottom: 0;
-      }
-      img{
-        // width: 30px;
       }
       @include max-breakpoint(sm){
         
@@ -289,6 +272,5 @@
   }
   @include max-breakpoint(sm){
     display: flex;
-    // margin: 30px 0;
   }
 }
