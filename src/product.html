@@ -204,20 +204,15 @@
           </div>
 
           <div class="container description">
-            <div class="row no-gutters description-row">
-              <!-- <div class="pdf"> -->
-              <!-- <div class="relative">
-                                <a href="#"><img src=<%= require("./img/pdf-icon.jpg") %> alt="download" class="download" /></a>
-                            </div> -->
-              <!-- </div> -->
-              <div class="col-lg-10 naslov-sadrzaj">
-                <h3>BELI STO - Opis proizvoda </h3>
+            <div class="naslov-sadrzaj">
+              <h3>BELI STO - Opis proizvoda </h3>
+            </div>
+            <div class="description-row">
+              <div class="pdf">
+                <a href="#" data-toggle="tooltip" title="Skini pdf">
+                  <img src=<%=  require( "./img/pdf-icon.jpg") %> alt="download" class="download" /></a>
               </div>
-              <div class="col-lg-10 sadrzaj">
-                <div class="pdf">
-                  <a href="#" data-toggle="tooltip" title="Skini pdf">
-                    <img src=<%=  require( "./img/pdf-icon.jpg") %> alt="download" class="download" /></a>
-                </div>
+              <div class="sadrzaj">
                 <h5>Elegantni evropski dizajn</h5>
                 <p>
                   Elegantni diza j Fusiontable stolova koristi ridigni belo obojeni čelični ram, u koji je smeštena sva snaga i stabilnost,
@@ -249,19 +244,24 @@
                 </p>
 
               </div>
-              <div class="col-lg-10 soc">
-                <div class="social">Podeli
-                  <a href="#">
-                    <img src=<%= require( "./img/social-icons.jpg") %> alt="social" /></a>
-                </div>
-                <div class="pdf2">
-                  <a href="#" data-toggle="tooltip" title="Skini pdf">
-                    <img src=<%= require( "./img/pdf-icon.jpg") %> alt="download" class="download2" /></a>
-                </div>
+            </div>
+
+            <div class="soc">
+              <div class="social">
+                Podeli
+                <a href="#">
+                  <img src=<%= require( "./img/social-icons.jpg") %> alt="social" />
+                </a>
+              </div>
+              <div class="pdf2">
+                <a href="#" data-toggle="tooltip" title="Skini pdf">
+                  <img src=<%= require( "./img/pdf-icon.jpg") %> alt="download" class="download2" />
+                </a>
               </div>
             </div>
           </div>
           <!-- .desctiption -->
+
           <div class="container" style="position: relative">
             <div class="row slider-row no-gutters" style="justify-content: center;">
               <div class="col-lg-10">
