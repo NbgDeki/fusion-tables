@@ -208,10 +208,13 @@
               <h3>BELI STO - Opis proizvoda </h3>
             </div>
             <div class="description-row">
+
               <div class="pdf">
                 <a href="#" data-toggle="tooltip" title="Skini pdf">
-                  <img src=<%=  require( "./img/pdf-icon.jpg") %> alt="download" class="download" /></a>
+                  <img src=<%=  require( "./img/pdf-icon.jpg") %> alt="download" class="download" />
+                </a>
               </div>
+
               <div class="sadrzaj">
                 <h5>Elegantni evropski dizajn</h5>
                 <p>
@@ -243,49 +246,43 @@
                   vam maksimalnu.
                 </p>
 
-              </div>
-            </div>
+              </div><!-- /.sadrzaj -->
 
+            </div><!-- /.description-row -->
+
+          </div><!-- /.desctiption -->
+
+          <div class="container">
             <div class="soc">
-              <div class="social">
-                Podeli
-                <a href="#">
-                  <img src=<%= require( "./img/social-icons.jpg") %> alt="social" />
-                </a>
+                <div class="social">
+                  Podeli
+                  <a href="#">
+                    <img src=<%= require( "./img/social-icons.jpg") %> alt="social" />
+                  </a>
+                </div>
+                <div class="pdf2">
+                  <a href="#" data-toggle="tooltip" title="Skini pdf">
+                    <img src=<%= require( "./img/pdf-icon.jpg") %> alt="download" class="download2" />
+                  </a>
+                </div>
               </div>
-              <div class="pdf2">
-                <a href="#" data-toggle="tooltip" title="Skini pdf">
-                  <img src=<%= require( "./img/pdf-icon.jpg") %> alt="download" class="download2" />
-                </a>
-              </div>
-            </div>
           </div>
-          <!-- .desctiption -->
 
           <div class="container" style="position: relative">
-            <div class="row slider-row no-gutters" style="justify-content: center;">
-              <div class="col-lg-10">
-                <div id="arrow-wrapper">
-                  <div style="position: relative">
-                    <img src=<%= require( "./img/blue-left-arrow.jpg") %> alt="beli sto" class="blue-left-arrow" />
-                    <img src=<%= require( "./img/blue-right-arrow.jpg") %> alt="beli sto" class="blue-right-arrow" />
-                  </div>
-                </div>
-                <div class="owl-carousel product-slider owl-theme col-md-12">
-                  <div class="slide">
-                    <img src=<%= require( "./img/product-slider.jpg") %> alt="beli sto" />
-                  </div>
-                  <div class="slide">
-                    <img src=<%= require( "./img/product-slider.jpg") %> alt="beli sto" />
-                  </div>
-                  <div class="slide">
-                    <img src=<%= require( "./img/product-slider.jpg") %> alt="beli sto" />
-                  </div>
-                </div>
+            <div id="arrow-wrapper">
+              <div style="position: relative">
+                <img src=<%= require( "./img/blue-left-arrow.jpg") %> alt="beli sto" class="blue-left-arrow" />
+                <img src=<%= require( "./img/blue-right-arrow.jpg") %> alt="beli sto" class="blue-right-arrow" />
+              </div>
+            </div>
 
+            <div class="owl-carousel product-slider">
+              <div class="slide">
+                <img src=<%= require( "./img/product-slider.jpg") %> alt="beli sto" />
               </div>
             </div>
           </div>
+
         </section>
 
         <div class="full3">
