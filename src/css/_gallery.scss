@@ -29,7 +29,7 @@
 
 .carousel-controls {
     position: absolute;
-    width: 50px;
+    width: 30px;
     top: 50%;
     opacity: 1;
     pointer-events: auto;
@@ -40,12 +40,12 @@
     }
 
     &--left {
-        left: 12px;
+        left: 0;
         transform: translateY(-50%);
     }
 
     &--right {
-        right: 12px;
+        right: 0;
         transform: translateY(-50%);
     }
 }
