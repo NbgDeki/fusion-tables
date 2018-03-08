@@ -19,12 +19,23 @@
     }
 
     img {
-        width: 100%;
+      width: 100%;
+      opacity: 1;
+      transition: opacity .25s;
+
+      &.loaded {
+        opacity: 0;
+      }
     }
 }
 
 .image-gallery {
     position: relative;
+    margin-bottom: 30px;
+
+    img {
+      cursor: pointer;
+    }
 }
 
 .carousel-controls {
