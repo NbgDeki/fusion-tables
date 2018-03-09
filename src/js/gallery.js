@@ -26,26 +26,38 @@ function _getArrow(dir) {
 $(document).ready(function () {
   // cache dom
   const $imageGallery = $('#jsImageGallery'),
-    $imageBox = $('#jsImageBox');
+    $image = $('#jsImageBox');
 
   // bind events
-  $imageGallery.on('click', _handleThumbnailClicks);
+  $imageGallery.on('click', handleThumbnailClicks);
 
   // inti carousel
   $imageGallery.owlCarousel(options);
 
   // click handler
-  function _handleThumbnailClicks(evt) {
-    let src,
-      $target = $(evt.target);
+  function handleThumbnailClicks(evt) {
+    let $target = $(evt.target);
 
     if (!$target.is('[data-is-thumbnail]')) return;
 
-    src = $target.attr('src');
-    $imageBox.attr('src', _getBigSrc(src));
+    replaceImageSrc($target.attr('src'));
   }
 
-  function _getBigSrc (src) {
+  function replaceImageSrc (oldSrc) {
+    const newSrc = getBigSrc(oldSrc);
+    const img = document.createElement('img');
+    img.src = newSrc;
+
+    $image.addClass('loading');
+    
+    img.onload = function () {
+      $image.attr('src', newSrc);
+      $image.removeClass('loading');
+      $image.off('transitionend');
+    }
+  }
+
+  function getBigSrc (src) {
     let srcBig = src.replace('small', 'big');
     srcBig = srcBig.replace('-S', '');
     return srcBig;

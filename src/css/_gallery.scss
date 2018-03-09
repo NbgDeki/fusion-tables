@@ -19,17 +19,28 @@
     }
 
     img {
-        width: 100%;
+      width: 100%;
+      opacity: 1;
+      transition: opacity .25s;
+
+      &.loading {
+        opacity: 0;
+      }
     }
 }
 
 .image-gallery {
     position: relative;
+    margin-bottom: 30px;
+
+    img {
+      cursor: pointer;
+    }
 }
 
 .carousel-controls {
     position: absolute;
-    width: 50px;
+    width: 30px;
     top: 50%;
     opacity: 1;
     pointer-events: auto;
@@ -40,12 +51,12 @@
     }
 
     &--left {
-        left: 12px;
+        left: 0;
         transform: translateY(-50%);
     }
 
     &--right {
-        right: 12px;
+        right: 0;
         transform: translateY(-50%);
     }
 }

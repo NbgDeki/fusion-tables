@@ -1,19 +1,16 @@
 #product-page{
   box-sizing: border-box;
+
   .product{
     display: flex;
-    justify-content: center;
-    @include max-breakpoint(md){
-      padding: 0 15px;
-    }
+
     .left-column{
-  
-      @include max-breakpoint(xxl){
-        width: 100%;
-      }
+      flex-grow: 1;
     }
   
     .right-column{
+      display: flex;
+      background-color: $primary;
   
       @include max-breakpoint(xxl){
         width: 100%;
@@ -29,9 +26,13 @@
 
   .text-holder{
     display: block;
-    background-color: $primary;
     opacity: 0.8;
     padding: 63px 50px;
+    margin: auto 0;
+    
+    @include min-breakpoint(lg){
+      padding: 0 50px;
+    }
 
     p{
       color: white;
@@ -52,225 +53,123 @@
 
   .description{
     position: relative;
-    @include max-breakpoint(sm){
-      padding: 0 10px;
-    }
-.description-row{
-  display: flex;
-  justify-content: center;
-  .naslov-sadrzaj{
-    margin-top: 30px;
-    padding: 0;
-    @include max-breakpoint(md){
-      padding: 0 15px;
+
+    .naslov-sadrzaj {
+      margin-top: 30px;
+
+        h3 {
+          font-weight: 300;
+          color: $letters-color;
+          font-size: 26px;
+          margin-bottom: 30px;
+    
+          @include max-breakpoint(sm){
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+    .description-row {
+      display: flex;
+      margin-bottom: 30px;
+
+      .sadrzaj {
+        flex-grow: 1;
+      }
+
+      h5 {
+        color: $primary;
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+      p {
+        color: $letters-color;
+        font-size: 14px;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
     }
   }
-  .sadrzaj{
-    padding: 0 70px;
-    position: relative;
-    @include max-breakpoint(md){
-      padding: 0 85px;
-    }
-    @include max-breakpoint(sm){
-      padding: 0 15px;
-    }
-    @include  max-breakpoint(xs){
-      padding: 0 15px;
-    }
-  }
-  .soc{
-    padding: 0 70px;
+
+  .soc {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
     margin-bottom: 30px;
-    @include max-breakpoint(md){
-      padding: 0 85px;
+
+    @include min-breakpoint(sm){
+      padding-left: 50px;
     }
-    @include max-breakpoint(md){
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    color: $letters-color;
+
+    a {
       padding-left: 15px;
     }
-    @include max-breakpoint(xs){
-      padding: 0;
+  }
+
+  .download2 {
+    display: none;
+
+    @include max-breakpoint(sm){
+      display: inline-block;
     }
   }
-    h3{
-      font-weight: 300;
-      color: $letters-color;
-      font-size: 26px;
-      margin-bottom: 30px;
 
-      @include max-breakpoint(sm){
-        margin-bottom: 20px;
-      }
+  .pdf {
+    width: 50px;
+    flex-shrink: 0;
+    margin-right: 50px;
+    border-right: 2px solid $primary;
 
-    }
-
-    h5{
-      color: $primary;
-      font-size: 20px;
-      font-weight: 300;
-    }
-
-    p{
-      color: $letters-color;
-      font-size: 14px;
-    }
-
-    .social{
-      display: flex;
-      align-items: center;
-      color: $letters-color;
-      h6{
-        margin-bottom: 0;
-      }
-      @include max-breakpoint(sm){
-        
-      }
-      a{
-        padding-left: 15px;
-      }
-    }
-
-    .download2{
+    @include max-breakpoint(sm){
       display: none;
-
-      @include max-breakpoint(sm){
-        display: inline-block;
-      }
     }
 
-    .pdf{
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      img{
-        width: 50px;
-      }
-      @include max-breakpoint(md){
-        left: 15px;
-      }
-
-      @include max-breakpoint(sm){
-        display: none;
-      }
-
-      .relative{
-        display: block;
-        position: relative;
-        width: 60px;
-
-        .download{
-          position: absolute;
-          top: -9px;
-          left: 65px;
-          @include max-breakpoint(xl){
-            left: 62px;
-          }
-          @include max-breakpoint(md){
-            position: relative;
-            left: auto;
-            top: auto;
-          }
-        }
-
-        .line{
-          position: absolute;
-          top: 0;
-          right: 0;
-          height: 300px;
-        }
-      }
-
+    img {
+      width: 100%;
     }
   }
-}
 
-  .product-slider{
-    padding-left: 90px;
-    padding-right: 90px;
+  .product-slider {
+    position: relative;
+    padding: 0 50px;
     margin-bottom: 40px;
 
-    @include max-breakpoint(xs){
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-
-    .owl-nav{
-      display: none;
-      width: 100%;
+    .blue-arrow {
       position: absolute;
-      top: 45%;
+      top: 50%;
+      transform: translateY(-50%);
 
-    }
-
-
-  }
-
-  #arrow-wrapper{
-    position: absolute;
-    top: 42%;
-    width: 100%;
-    padding: 0 50px 0 50px;
-    z-index: 2;
-
-    @include max-breakpoint(sm){
-      top: 35%;
-    }
-
-    @include max-breakpoint(xs){
-      top: 30%;
-    }
-
-    .blue-left-arrow{
-      display: block;
-      cursor: pointer;
-      width: 50px;
-      height: auto;
-      position: absolute;
-      left: 0;
-
-      @include max-breakpoint(sm){
-        width: 50px;
-        left: 15px;
+      &--left {
+        left: 0;
       }
 
-      @include max-breakpoint(xs){
-        width: 50px;
-        left: -20px;
-      }
-    }
-
-    .blue-right-arrow{
-      display: block;
-      cursor: pointer;
-      width: 50px;
-      height: auto;
-      position: absolute;
-      right: 0;
-
-      @include max-breakpoint(sm){
-        width: 50px;
-        right: 15px;
-      }
-
-      @include max-breakpoint(xs){
-        width: 50px;
-        right: -20px;
+      &--right {
+        right: 0;
       }
     }
   }
 }
 
-.pdf2{
+
+.pdf2 {
   display: none;
-  img{
-    @include max-breakpoint(sm){
+
+  @include max-breakpoint(sm) {
+    display: flex;
+  }
+
+  img {
+    @include max-breakpoint(sm) {
       width: 28px;
     }
-  }
-  @include max-breakpoint(sm){
-    display: flex;
   }
 }

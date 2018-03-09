@@ -15,8 +15,11 @@ $(function () {
     var owl = $('.product-slider').owlCarousel({
         items: 1,
         autoHeight: true,
-        nav: false,
-        //navText: ['<img src="https://ministudio.rs/download/blue-left-arrow.jpg" class="blue-left-arrow">', '<img src="https://ministudio.rs/download/blue-right-arrow.jpg" class="blue-right-arrow">'],
+        nav: true,
+        navText: [
+          '<img src="https://www.fusiontables.rs/img/blue-left-arrow.jpg" class="blue-arrow blue-arrow--left">',
+          '<img src="https://www.fusiontables.rs/img/blue-right-arrow.jpg" class="blue-arrow blue-arrow--right">'
+        ],
         loop: true,
         autoplay: true,
         smartSpeed: 700,

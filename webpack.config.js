@@ -123,6 +123,10 @@ module.exports = {
             filename: 'testimonials.html',
             template: 'src/testimonials.html'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'press.html',
+            template: 'src/press.html'
+        }),
         /*new webpack.optimize.CommonsChunkPlugin({
             name: "commons",
             filename: "commons.js",

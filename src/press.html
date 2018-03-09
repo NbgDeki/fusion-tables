@@ -10,21 +10,15 @@
 </head>
 
 <body>
-  <div id="back-to-top">
-
-  </div>
-  <!-- <a href="#" id="back-to-top" title="Back to top">&uarr;</a> -->
   <%= require('html-loader!./inc/mobile-side-menu.html') %>
 
     <div id="site-content">
-      <div id="homepage" class="gallery-page">
+      <div id="homepage">
 
         <div class="two-boxes">
-          <div class="left-box">
-
-          </div>
+          <div class="left-box"></div>
           <div class="right-box">
-            <!-- <h2>kolekcije</h2> -->
+            <h2>press</h2>
           </div>
         </div>
 
@@ -134,46 +128,60 @@
         <div class="container-fluid fluid-nav">
           <div class="container fluid-nav-cont">
             <i class="fas fa-bars" id="trigger"></i>
-            <div class="logo-wrapper">
-              <img src="./img/logo.png" alt="fusion table" class="logo" />
-            </div>
-          </div>
-        </div>
-        <!-- .container-fluid -->
-
-        <div class="container-fluid px-0">
-          <div class="image-box">
-            <img src="https://ministudio.rs/download/fusion-tables/big/fusiontables-100.jpg" id="jsImageBox" />
+            <img src="./img/logo.png" alt="fusion table" class="logo" />
           </div>
         </div>
         <!-- .container-fluid -->
 
         <section>
-          <!-- pagination -->
+          <div class="container-fluid hero-image"></div>
+        </section>
+
+        <section>
           <div class="container" style="padding: 0 15px;">
             <div class="row">
               <div class="col-lg-12">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="#">home</a>
+                    <a href="#">kolekcije</a>
                   </li>
                   <li class="breadcrumb-item active">
-                    <a href="#">galerija</a>
+                    <a href="#">stolovi i sidebars</a>
                   </li>
                 </ol>
               </div>
             </div>
           </div>
         </section>
-        <!-- ./pagination -->
 
-        <!-- carousel -->
-        <div class="image-gallery container owl-carousel" id="jsImageGallery">
+        <!-- content -->
+        <section class="container" id="press">
+          <div class="row">
 
-          <%= require('html-loader!./inc/gallery-images.html') %>
+            <div class="col-md-6 press-item">
+              <div class="press-item__thumbnail">
+                <img src=<%= require("./img/press/grazia.jpg") %> />
+              </div>
+              <div class="press-item__details">
+                <h3 class="press-item__title">grazia rs</h3>
+                <div class="press-item__date">March, 2018</div>
+                <a href="#" class="press-item__link">
+                  <img src=<%= require("./img/pdf-icon.jpg") %> alt="download" />
+                </a>
+              </div>
+            </div>
 
+          </div>
+        </section>
+        <!-- ./content -->
+
+        <div class="container d-flex flex-row-reverse">
+          <ul class="pagination ft-pagination">
+            <li class="page-item ft-page-item active"><a class="page-link ft-page-link" href="#">1</a></li>
+            <li class="page-item ft-page-item"><a class="page-link ft-page-link" href="#">2</a></li>
+            <li class="page-item ft-page-item"><a class="page-link ft-page-link" href="#">3</a></li>
+          </ul>
         </div>
-        <!-- ./carousel -->
 
         <div class="full3">
           <section class="container body-content">
@@ -202,7 +210,6 @@
                     <br>
                     <a href="tel:+391637780088">(+381) 63 778 00 88</a>
                   </li>
-
                 </ul>
               </div>
               <div class="col-sm-6 col-md-4 col-lg-4 insta">
@@ -228,8 +235,6 @@
 
 
     </div>
-
-
 </body>
 
 </html>
