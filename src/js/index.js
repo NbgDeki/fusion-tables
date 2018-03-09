@@ -5,8 +5,12 @@ $(function () {
     $('.home-slider').owlCarousel({
         items: 1,
         autoHeight: true,
+        dots: true,
         nav: true,
-        navText: ['<img src="https://ministudio.rs/download/srelica-levo.png">', '<img src="https://ministudio.rs/download/strelica-desno.png">'],
+        navText: [
+          '<img src="https://ministudio.rs/download/srelica-levo.png">',
+          '<img src="https://ministudio.rs/download/strelica-desno.png">'
+        ],
         loop: true,
         autoplay: true,
         smartSpeed: 700,
