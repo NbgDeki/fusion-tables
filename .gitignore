@@ -14,3 +14,4 @@ yarn-error.log
 src/img/gallery
 output.html
 /dist
+package-lock.json

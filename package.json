@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prestart": "npm run images:gallery",
     "start": "webpack-dev-server --open",
     "build:prod": "webpack -p",
     "images:gallery": "node gallery-list.js ./src/img/gallery/small ./src/inc/gallery-images.html"
