@@ -102,6 +102,11 @@ a {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
         background-color: $background;
+
+        p:last-child {
+          margin-bottom: 0;
+        }
+        
         p {
           a {
             text-decoration: none;
@@ -178,6 +183,11 @@ a {
       padding-right: 2.5rem;
       background-color: #f9f9f9;
       border-top: 1px solid rgba(0, 0, 0, 0.125);
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+
       p {
         a {
           text-decoration: none;
