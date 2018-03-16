@@ -141,39 +141,6 @@
   .product-slider {
     position: relative;
     padding: 0;
-    margin-bottom: 40px;
-
-    @include min-breakpoint(xs) {
-      padding: 0 25px;
-    }
-
-    @include min-breakpoint(sm) {
-      padding: 0 50px;
-    }
-
-    .blue-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 50px;
-      display: none;
-
-      @include min-breakpoint(xs) {
-        display: initial;
-      }
-
-      @include min-breakpoint(sm) {
-        width: auto;
-      }
-
-      &--left {
-        left: 0;
-      }
-
-      &--right {
-        right: 0;
-      }
-    }
   }
 }
 
