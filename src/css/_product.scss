@@ -140,22 +140,7 @@
 
   .product-slider {
     position: relative;
-    padding: 0 50px;
-    margin-bottom: 40px;
-
-    .blue-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-
-      &--left {
-        left: 0;
-      }
-
-      &--right {
-        right: 0;
-      }
-    }
+    padding: 0;
   }
 }
 

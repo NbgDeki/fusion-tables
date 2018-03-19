@@ -26,48 +26,48 @@ fontawesome.library.add(faPlus, faBars, faAngleRight, faFacebook, faInstagram, f
 
 
 $(function () {
-    $('.collapse').collapse('hide');
+  $('.collapse').collapse('hide');
 
-    $('#trigger').click(function(){
-        $('#side-menu').toggleClass('active');
+  $('#trigger').click(function () {
+    $('#side-menu').toggleClass('active');
 
-        if($('#side-menu').hasClass('active')){
-            $('#site-content').append('<div id="hover-over"></div>');
+    if ($('#side-menu').hasClass('active')) {
+      $('#site-content').append('<div id="hover-over"></div>');
 
-            $('#hover-over').click(function () {
-                $(this).remove();
-                $('#side-menu').removeClass('active');
-            });
-        }
-    });
-
-    $('.trigger2').click(function () {
-        $('#desktop-side-menu').toggleClass('active');
-        $('.two-boxes').toggleClass('active');
-    });
-
-
-    //back to top button 
-    if ($('#back-to-top').length) {
-        var scrollTrigger = 20, // px
-            backToTop = function () {
-                var scrollTop = $(window).scrollTop();
-                if (scrollTop > scrollTrigger) {
-                    $('#back-to-top').addClass('show');
-                } else {
-                    $('#back-to-top').removeClass('show');
-                }
-            };
-        backToTop();
-        $(window).on('scroll', function () {
-            backToTop();
-        });
-        $('#back-to-top').on('click', function (e) {
-            e.preventDefault();
-            $('html,body').animate({
-                scrollTop: 0
-            }, 700);
-        });
+      $('#hover-over').click(function () {
+        $(this).remove();
+        $('#side-menu').removeClass('active');
+      });
     }
+  });
+
+  $('.trigger2').click(function () {
+    $('#desktop-side-menu').toggleClass('active');
+    $('.two-boxes').toggleClass('active');
+  });
+
+
+  //back to top button 
+  if ($('#back-to-top').length) {
+    var scrollTrigger = 20, // px
+      backToTop = function () {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > scrollTrigger) {
+          $('#back-to-top').addClass('show');
+        } else {
+          $('#back-to-top').removeClass('show');
+        }
+      };
+    backToTop();
+    $(window).on('scroll', function () {
+      backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+      e.preventDefault();
+      $('html,body').animate({
+        scrollTop: 0
+      }, 700);
+    });
+  }
 
 });
