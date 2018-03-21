@@ -20,13 +20,15 @@ const options = {
 };
 
 function _getArrow(dir) {
-  return `<img class="carousel-controls carousel-controls--${dir}" src="https://www.fusiontables.rs/img/blue-${dir}-arrow.jpg">`;
+  return `<img class="carousel-controls carousel-controls--${dir}" src="https://www.fusiontables.rs/themes/ft/img/blue-${dir}-arrow.jpg">`;
 }
 
 $(document).ready(function () {
   // cache dom
   const $imageGallery = $('#jsImageGallery'),
     $image = $('#jsImageBox');
+
+  if ($imageGallery.length < 1) return;
 
   // bind events
   $imageGallery.on('click', handleThumbnailClicks);
