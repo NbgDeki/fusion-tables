@@ -254,3 +254,53 @@
     }
   }
 }
+
+.form-group {
+  label {
+    font-size: 14px;
+    color: $letters-color;
+  }
+
+  &.required {
+    label::after {
+      display: inline;
+      content: "*";
+      color: red;
+    }
+  } 
+}
+
+.form-control {
+  border: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #dad6d5;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0;
+
+  &:hover {
+    border-bottom-color: #424242;
+  }
+
+  &:focus {
+    border-bottom-color: $primary;
+  }
+}
+
+.btn {
+  border-radius: 0;
+  padding: 10px 30px;
+  
+  &-primary {
+    color: white !important;
+  }
+}
+
+.file-link {
+  font-weight: 400;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
