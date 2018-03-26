@@ -133,6 +133,12 @@
       display: none;
     }
 
+    a {
+      display: block;
+      padding: 9px;
+      background-color: $primary;
+    }
+
     img {
       width: 100%;
     }
@@ -147,6 +153,8 @@
 
 .pdf2 {
   display: none;
+  background-color: $primary;
+  padding: 2px;
 
   @include max-breakpoint(sm) {
     display: flex;
@@ -154,7 +162,7 @@
 
   img {
     @include max-breakpoint(sm) {
-      width: 28px;
+      width: 22px;
     }
   }
 }

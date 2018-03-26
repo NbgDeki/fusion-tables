@@ -183,92 +183,33 @@
             <div class="o-nama-grid">
               <div class="o-nama-text">
                 <div class="text-left">
-                  <h5>ARCHITECT CLUB</h5>
-                  <p>FusionTables uvodi potpuno novi koncept u trpezariju ili kancelariju, jedinstveni proizvod koji stvara potrebu da se ljudi ponovo okupljaju i zabavljaju. Verujemo da ćete vi i i vaši klijenti otkriti čaroliju u fuziji i dizajnu ovog stola.</p>
-                  <p>Pridružite se našem odabranom klubu stručnih arhitekata i profesionalnih dizajnera enterijera i postanite ambasadori ovog svetskog brenda. Prijavite se na: <a href="mailto:architect@fusiontables.rs">architect@fusiontables.rs</a>.</p>
-                  <p>Za vas smo pripremili materijale sa opisom i dimenzijama, kao i Autocad fajlove Fusion elemenata.</p>
+                  <h5>KATALOG</h5>
+                  <p>Pored ponuđenih modela iz svake kategorije proizvoda, FusionTables vam pruža mogućnost da sami birate materijale i kreirate unikatnu verziju Fusion stola samo za vas i po vašoj želji. Na raspolaganju su vam raznovrsni materijali za nogare i ploče, kao i 25 boja čoje.</p>
+                  <p>Da biste detaljnije sagledali asortiman proizvoda i mogućnosti kombinovanja materijala, preuzmite katalog:</p>
                 </div>
-                <div class="text-left">
-                  <h6>Preuzmite fajlove:</h6>
-                  <p>
-                    <a class="file-link" href="#">
-                      <span class="file-link__icon">
-                        <img src=<%= require("./img/download-dwg.png") %> />
-                      </span>
-                      <span class="file-link__text">Bench_3D.dwg</span>
-                    </a>,
-                    <a class="file-link" href="#">
-                      <span class="file-link__icon">
-                        <img src=<%= require("./img/download-dwg.png") %> />
-                      </span>
-                      <span class="file-link__text">Chair_3D.dwg</span>
-                    </a>,
-                    <a class="file-link" href="#">
-                      <span class="file-link__icon">
-                        <img src=<%= require("./img/download-dwg.png") %> />
-                      </span>
-                      <span class="file-link__text">Dressoirs.dwg</span>
-                    </a>,
-                    <a class="file-link" href="#">
-                      <span class="file-link__icon">
-                        <img src=<%= require("./img/download-dwg.png") %> />
-                      </span>
-                      <span class="file-link__text">Fusion_Billiard_3D.dwg</span>
-                    </a>,
-                    <a class="file-link" href="#">
-                      <span class="file-link__icon">
-                        <img src=<%= require("./img/download-dwg.png") %> />
-                      </span>
-                      <span class="file-link__text">Fusion_Table_3D.dwg</span>
-                    </a>,
-                    <a class="file-link" href="#">
-                      <span class="file-link__icon">
-                        <img src=<%= require("./img/download-pdf.png") %> />
-                      </span>
-                      <span class="file-link__text">Measures.pdf</span>
-                    </a>,
-                    <a class="file-link" href="#">
-                      <span class="file-link__icon">
-                        <img src=<%= require("./img/download-pdf.png") %> />
-                      </span>
-                      <span class="file-link__text">Requirements_Layout.pdf</span>
-                    </a>
-                  </p>
-                </div>
-                <div class="text-left">
-                  <form>
-                    <div class="row mb-2">
-                      <div class="col-md-6 form-group required">
-                        <label class="" for="name">Ime i prezime</label>
-                        <input class="form-control" type="text" id="name" name="name" />
+                <div class="row">
+                  <div class="col-md-6">
+                    <a class="katalog" href="#">
+                      <div class="katalog-img">
+                        <img src=<%= require('./img/katalog/Brosura-FT-Srb.jpg') %> alt="katalog">
+                        <div class="katalog-img__icon">
+                          <img class="icon" src=<%= require('./img/download-pdf.png') %> alt="pdf ikonica">
+                        </div>
                       </div>
-                      <div class="col-md-6 form-group required">
-                        <label for="city">Grad</label>
-                        <input class="form-control" type="text" id="city" name="city" />
+                      <p>Katalog na srpskom</p>
+                    </a> 
+                  </div>
+                  <div class="col-md-6">
+                    <a class="katalog" href="#">
+                      <div class="katalog-img">
+                        <img src=<%= require('./img/katalog/Brochure-FT-Eng.jpg') %> alt="katalog">
+                        <div class="katalog-img__icon">
+                          <img class="icon" src=<%= require('./img/download-pdf.png') %> alt="pdf ikonica">
+                        </div>
                       </div>
-                      <div class="col-md-6 form-group required">
-                        <label for="country">Država</label>
-                        <input class="form-control" type="text" id="country" name="country" />
-                      </div>
-                      <div class="col-md-6 form-group required">
-                        <label for="telephone">Telefon</label>
-                        <input class="form-control" type="text" id="telephone" name="telephone" />
-                      </div>
-                      <div class="col-md-6 form-group required">
-                        <label for="email">Email</label>
-                        <input class="form-control" type="text" id="email" name="email" />
-                      </div>
-                      <div class="col-md-6 form-group">
-                        <label for="web">Web aresa</label>
-                        <input class="form-control" type="text" id="web" name="web" />
-                      </div>
-                      <div class="col-md-6 form-group">
-                        <label for="company">Kompanija</label>
-                        <input class="form-control" type="text" id="company" name="company" />
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Pošalji</button>
-                  </form>
+                      <p>Katalog na engleskom</p>
+                    </a>  
+                  </div>
                 </div>
               </div>
             </div>
