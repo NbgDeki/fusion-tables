@@ -127,6 +127,10 @@ module.exports = {
             filename: 'press.html',
             template: 'src/press.html'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'archi-club.html',
+            template: 'src/archi-club.html'
+        }),
         /*new webpack.optimize.CommonsChunkPlugin({
             name: "commons",
             filename: "commons.js",
