@@ -24,9 +24,17 @@
     bottom: 0;
     left: 0;
     display: inline-block;
+    background-color: $primary;
+    padding: 14px;
+    width: 64px;
+    height: 64px;
     
     &:hover {
       opacity: .8;
+    }
+
+    img {
+      width: 100%;
     }
   }
 
