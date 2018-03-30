@@ -3,6 +3,7 @@ import 'bootstrap';
 import '../css/main.scss';
 require('./index');
 import './gallery';
+import './common';
 
 
 import fontawesome from '@fortawesome/fontawesome';
