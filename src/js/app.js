@@ -4,7 +4,7 @@ import '../css/main.scss';
 require('./index');
 import './gallery';
 import './common';
-
+import PopupWidget from './popup-widget';
 
 import fontawesome from '@fortawesome/fontawesome';
 import faPlus from '@fortawesome/fontawesome-free-solid/faPlus';
@@ -71,4 +71,11 @@ $(function () {
     });
   }
 
+});
+
+$(document).ready(function () {
+  PopupWidget.init(() => {
+    // callback function
+    console.log('timeout expired.');
+  });
 });
