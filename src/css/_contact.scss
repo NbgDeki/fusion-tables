@@ -1,121 +1,64 @@
-.hero-contact-image{
-  background: url('../img/hero-contact.jpg') no-repeat center;
-  background-size: cover;
-  height: 300px;
-  width: 100%;
-  @include max-breakpoint(xs){
-      display: none;
-  }
+.form-fields {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
-#contact{
+.select {
+  &_field {
+    position: relative;
 
-  h2{
-    color: $primary;
-    font-size: 30px;
-    font-weight: 300;
-    padding: 0 13px;
-    @include max-breakpoint(xs){
-      margin-top: 30px;
-      margin-bottom: 30px;
+    &:after {
+      position: absolute;
+      top: 0.75em;
+      right: 0.5em;
+      width: 0;
+      height: 0;
+      padding: 0;
+      content: '';
+      border-left: 0.25em solid transparent;
+      border-right: 0.25em solid transparent;
+      border-top: 0.375em solid $primary;
+      pointer-events: none;
     }
   }
 
-  .form-padding{
-    padding: 0 30px;
+  select {
+    font-family: inherit;
+    background-color: transparent;
+    width: 100%;
+    padding: 6px 25px 6px 0;
+    font-size: 16px;
+    color: #495057;
+    border: none;
+    border-bottom: 1px solid #dad6d5;
+    appearance: none;
 
-    @include max-breakpoint(lg){
-      padding-right: 0;
-      padding-left: 0;
-    }
-    @include max-breakpoint(md){
-      padding: 0 15px;
-    }
-
-    .vertical-center {
-      display: flex;
-      align-items: center;
-      padding-left: 0;
-      @include max-breakpoint(md){
-        padding-left: 15px;
-        padding-right: 15px;
-      }
-
-      .ministudio{
-        margin-bottom: 40px;
-      }
+    &:hover {
+      border-bottom-color: #424242;
     }
 
-    ul{
-      list-style: none;
-      padding-left: 0;
-
-      li{
-        padding-left: 25px;
-        position: relative;
-        margin-bottom: 10px;
-        font-size: 14px;
-        color: #868e96;
-        svg{
-          position: absolute;
-          left: 0;
-          top: 5px;
-          color: $primary;
-        }
-
-        a{
-          color: #868e96;
-        }
-      }
-    }
-
-    .forma{
-      padding: 30px 0 30px 30px;
-
-      @include max-breakpoint(md){
-        padding-left: 0;
-      }
-
-      @include max-breakpoint(sm){
-        margin-right: -15px;
-        margin-left: -15px;
-      }
-
-      label{
-        width: 100%;
-        font-size: 14px;
-        color: #868e96;
-      }
-
-      textarea{
-        width: 100%;
-        border: 1px solid $form-color;
-        margin-top: 25px;
-        min-height: 170px;
-        font-size: 14px;
-      }
-
-      input{
-        width: 100%;
-        border: none;
-        border-bottom: 1px solid $form-color;
-        margin-bottom: 25px;
-      }
-
-      button{
-        border-radius: 0;
-        color: white;
-        padding: 10px 30px;
-
-        @include max-breakpoint(sm){
-          margin-bottom: 30px;
-        }
-      }
-
-      span{
-        color: red;
-      }
+    &:focus {
+      outline: none;
+      border-bottom-color: $primary;
     }
   }
 }
 
+.position-relative > .g-recaptcha {
+  // height: 78px;
+  // width: 304px;
+  // background-color: #fafafa;
+  // border: 1px solid #dedede;
+  // border-radius: 2px;
+
+  position: relative;
+  margin-bottom: 16px;
+  
+  @include min-breakpoint(lg) { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(calc(-100% - 24px));
+    margin: 0;
+  }
+}

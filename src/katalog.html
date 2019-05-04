@@ -14,6 +14,14 @@
 
     <div id="site-content">
 
+      <!-- <div class="back-logo">
+            <a href="#"><img src=<%= require("./img/logo.png") %> alt="fusion tables" /></a>
+            <div class="trigger2">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div> -->
+
+
       <div id="homepage">
 
         <div class="two-boxes">
@@ -106,7 +114,13 @@
                 </h5>
               </div>
             </div>
-
+            <!-- <div class="card">
+                                <div class="card-header" id="heading-desktop-7">
+                                    <h5 class="mb-0">
+                                        <a href="#">konfigurator</a>
+                                    </h5>
+                                </div>
+                            </div> -->
             <div class="card">
               <div class="card-header" id="heading-desktop-7">
                 <h5 class="mb-0">
@@ -120,11 +134,15 @@
             <a href="https://www.facebook.com/fusiontablesserbia/" target="_blank">
               <i class="fab fa-facebook"></i>
             </a>
-
+            <!-- <a href="#">
+                                <i class="fab fa-linkedin"></i>
+                            </a> -->
             <a href="https://www.instagram.com/fusiontables/" target="_blank">
               <i class="fab fa-instagram"></i>
             </a>
-
+            <!-- <a href="#">
+                                <i class="fab fa-pinterest-square"></i>
+                            </a> -->
           </div>
           <div class="blue">
 
@@ -165,65 +183,33 @@
             <div class="o-nama-grid">
               <div class="o-nama-text">
                 <div class="text-left">
-                  <h5>Kontaktirajte nas</h5>
-                  <p>Ukoliko ste zainteresovani za više informacija vezano za FusionTables , molimo Vas popunite kontakt formu.<br/>Biće nam zadovoljstvo da Vam odgovorimo u najkraćem mogućem roku.</p>
+                  <h5>KATALOG</h5>
+                  <p>Pored ponuđenih modela iz svake kategorije proizvoda, FusionTables vam pruža mogućnost da sami birate materijale i kreirate unikatnu verziju Fusion stola samo za vas i po vašoj želji. Na raspolaganju su vam raznovrsni materijali za nogare i ploče, kao i 25 boja čoje.</p>
+                  <p>Da biste detaljnije sagledali asortiman proizvoda i mogućnosti kombinovanja materijala, preuzmite katalog:</p>
                 </div>
-                <div class="text-left">
-                  <form>
-                    <div class="row form-fields mb-2">
-                      <div class="col-xl-6 col-lg-12">
-                        <div class="form-group required">
-                          <label class="" for="name">Ime i prezime</label>
-                          <input class="form-control" type="text" id="name" name="name" />
-                        </div>
-                        <div class="form-group">
-                          <label for="company">Kompanija</label>
-                          <input class="form-control" type="text" id="company" name="company" />
-                        </div>
-                        <div class="form-group">
-                          <label for="city">Grad</label>
-                          <input class="form-control" type="text" id="city" name="city" />
-                        </div>
-                        <div class="form-group">
-                          <label for="country">Država</label>
-                          <input class="form-control" type="text" id="country" name="country" />
+                <div class="row">
+                  <div class="col-md-6">
+                    <a class="katalog" href="#">
+                      <div class="katalog-img">
+                        <img src=<%= require('./img/katalog/Brosura-FT-Srb.jpg') %> alt="katalog">
+                        <div class="katalog-img__icon">
+                          <img class="icon" src=<%= require('./img/download-pdf.png') %> alt="pdf ikonica">
                         </div>
                       </div>
-                      <div class="col-xl-6 col-lg-12">
-                        <div class="form-group required">
-                          <label for="profile">Profil</label>
-                          <div class="select">
-                            <div class="select_field">
-                              <select id="profile" name="profile">
-                                <option value="" disabled selected>Izaberite profil</option>
-                                <option value="kupac">Zainteresovan sam za kupovinu</option>
-                                <option value="prodavac">Zainteresovan sam za prodaju</option>
-                                <option value="arhitekta">Arhitekta</option>
-                                <option value="dizajner">Dizajner enterijera</option>
-                                <option value="agent">Agent/Press</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-group required">
-                          <label for="email">Email</label>
-                          <input class="form-control" type="text" id="email" name="email" />
-                        </div>
-                        <div class="form-group">
-                          <label for="telephone">Telefon</label>
-                          <input class="form-control" type="text" id="telephone" name="telephone" />
-                        </div>
-                        <div class="form-group required">
-                          <label for="message">Poruka</label>
-                          <textarea class="form-control" id="message" name="message" rows="6"></textarea>
+                      <p>Katalog na srpskom</p>
+                    </a> 
+                  </div>
+                  <div class="col-md-6">
+                    <a class="katalog" href="#">
+                      <div class="katalog-img">
+                        <img src=<%= require('./img/katalog/Brochure-FT-Eng.jpg') %> alt="katalog">
+                        <div class="katalog-img__icon">
+                          <img class="icon" src=<%= require('./img/download-pdf.png') %> alt="pdf ikonica">
                         </div>
                       </div>
-                    </div>
-                    <div class="position-relative">
-                      <div class="g-recaptcha"></div>
-                      <button type="submit" class="btn btn-primary">Pošalji</button>
-                    </div>
-                  </form>
+                      <p>Katalog na engleskom</p>
+                    </a>  
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,6 +1,7 @@
 @import "colors";
 @import "~bootstrap/scss/bootstrap";
 @import "mixin";
+@import "components";
 @import "side-menu";
 @import "copyright";
 @import "index";
@@ -9,6 +10,10 @@
 @import "about-us";
 @import "contact";
 @import "design";
+@import "gallery";
+@import "testimonials";
+@import "press";
+@import "importants";
 
 #back-to-top {
     position: fixed;

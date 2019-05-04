@@ -1,2 +1,13 @@
+$(document).ready(function () {
+  const $activeLinkEls = $('a.active');
+  
+  $activeLinkEls.each((i, element) => {
+    const $collapseEl = $(element).closest('.collapse');
 
-import '../css/common.scss';
+    if ($collapseEl.length < 1) {
+      return;
+    }
+
+    $collapseEl.collapse();
+  });
+});

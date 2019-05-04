@@ -115,6 +115,26 @@ module.exports = {
             filename: 'design.html',
             template: 'src/design.html'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'gallery.html',
+            template: 'src/gallery.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'testimonials.html',
+            template: 'src/testimonials.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'press.html',
+            template: 'src/press.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'archi-club.html',
+            template: 'src/archi-club.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'katalog.html',
+            template: 'src/katalog.html'
+        }),
         /*new webpack.optimize.CommonsChunkPlugin({
             name: "commons",
             filename: "commons.js",
